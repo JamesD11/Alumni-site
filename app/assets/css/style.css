@@ -1,0 +1,28 @@
+    .left h2,
+    p {
+        margin-top: 127px;
+    }
+    
+    .left img {
+        margin-top: 0px;
+    }
+    
+    .right h2,
+    p {
+        margin-top: 20px;
+    }
+    
+    .right img {
+        margin-top: 103px;
+    }
+    .partners{
+        margin-top: 100px;
+    }
+    
+    .hiring {
+        background-color: #f7f7f7;
+    }
+    
+    footer {
+        background-color: #333333;
+    }

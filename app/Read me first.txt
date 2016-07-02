@@ -1,0 +1,6 @@
+To run this app you need to have http-server installed as global
+---------------------------------------------------------------------------
+Just do npm install http-server -g
+---------------------------------------------------------------------------
+And then bash in root folder and type http-server
+---------------------------------------------------------------------------
