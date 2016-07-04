@@ -1,28 +1,48 @@
-    .left h2,
-    p {
-        margin-top: 127px;
-    }
-    
-    .left img {
-        margin-top: 0px;
-    }
-    
-    .right h2,
-    p {
-        margin-top: 20px;
-    }
-    
-    .right img {
-        margin-top: 103px;
-    }
-    .partners{
-        margin-top: 100px;
-    }
-    
-    .hiring {
-        background-color: #f7f7f7;
-    }
-    
-    footer {
-        background-color: #333333;
-    }
+   .carousel-inner {
+       width: 100%;
+       max-height: 600px !important;
+   }
+   
+   .container {
+       margin-top: 100px;
+   }
+   
+   .left h2,
+   p {
+       margin-top: 127px;
+   }
+   
+   .left img {
+       margin-top: 0px;
+   }
+   
+   .right h2,
+   p {
+       margin-top: 20px;
+   }
+   
+   .right img {
+       margin-top: 103px;
+   }
+   
+   .partners {
+       margin-top: 100px;
+   }
+   
+   .hiring {
+       background-color: #f7f7f7;
+       margin-bottom: 20px;
+       padding: 1%;
+   }
+   
+   footer {
+       background-color: #333333;
+   }
+   
+   .join {
+       margin-top: 50px;
+   }
+   
+   .rules img {
+       padding-bottom: 5px;
+   }
