@@ -8,7 +8,7 @@
 
 
             function getArticles() {
-                return $http.get('http://www.reddit.com/r/Coding/hot/.json')
+                return $http.get('https://api.github.com/users')
             }
 
             return {

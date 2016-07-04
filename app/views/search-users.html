@@ -18,4 +18,38 @@
         </div>
     </div>
 </nav>
-<h2>Search Users</h2>
+<!-- header -->
+<!-- <div class="row">
+    <div class="col-md-12">
+        <<img src="http://dummyimage.com/800x600/4d494d/686a82.gif&text=placeholder+image" alt="placeholder+image">
+    </div>
+</div> -->
+<!-- Container -->
+<div class="container">
+<!-- Search -->
+    <div class="row text-center">
+        <div class="col-md-12">
+            <div ng-controller="appCTRL">
+                <button type="button" class="btn btn-primary" ng-click="vm.isCollapsed = !vm.isCollapsed">Search</button>
+                <hr>
+                <div uib-collapse="vm.isCollapsed">
+                    <form>
+                        <div class="form-group col-sm-7">
+                            <input type="text" class="form-control" id="" placeholder="Username">
+                        </div>
+                        <div class="form-group col-sm-5">
+                            <button type="submit" class="btn btn-block btn-primary">Search</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Users -->
+    <div class="row">
+        <div class="col-md-10" ng-repeat="user in vm.articles">
+            <h2>{{user.login}}</h2>
+            <img src="{{user.avatar_url}}" alt="{{user.avatar_url}}">
+        </div>
+    </div>
+</div>
