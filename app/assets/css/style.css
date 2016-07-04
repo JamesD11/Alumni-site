@@ -25,6 +25,10 @@
        margin-top: 103px;
    }
    
+   .rules img {
+       padding-bottom: 5px;
+   }
+   
    .partners {
        margin-top: 100px;
    }
@@ -35,14 +39,10 @@
        padding: 1%;
    }
    
-   footer {
-       background-color: #333333;
-   }
-   
    .join {
        margin-top: 50px;
    }
    
-   .rules img {
-       padding-bottom: 5px;
+   footer {
+       background-color: #333333;
    }
