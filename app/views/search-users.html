@@ -18,31 +18,20 @@
         </div>
     </div>
 </nav>
-<!-- header -->
-<!-- <div class="row">
-    <div class="col-md-12">
-        <<img src="http://dummyimage.com/800x600/4d494d/686a82.gif&text=placeholder+image" alt="placeholder+image">
-    </div>
-</div> -->
 <!-- Container -->
 <div class="container">
     <!-- Search -->
     <div class="row text-center">
         <div class="col-md-12">
-            <div ng-controller="appCTRL">
-                <button type="button" class="btn btn-primary" ng-click="vm.isCollapsed = !vm.isCollapsed">Search</button>
-                <hr>
-                <div uib-collapse="vm.isCollapsed">
-                    <form>
-                        <div class="form-group col-sm-7">
-                            <input type="text" class="form-control" id="" placeholder="Username">
-                        </div>
-                        <div class="form-group col-sm-5">
-                            <button type="submit" class="btn btn-block btn-primary">Search</button>
-                        </div>
-                    </form>
+            <img src="assets/images/search-01.png">
+            <form>
+                <div class="form-group col-sm-8 col-sm-offset-2">
+                    <input type="text" class="form-control" id="" placeholder="Username" ng-model="vm.searchTerm">
                 </div>
-            </div>
+                <div class="form-group col-sm-6 col-sm-offset-3">
+                    <button type="submit" class="btn btn-block btn-primary" ng-click="vm.doSearch()">Search</button>
+                </div>
+            </form>
         </div>
     </div>
     <!-- Users -->
@@ -71,31 +60,8 @@
                 </li>
                 <li class="list-group-item">
                     <span>Link:</span>
-                    <a href=""></span>{{user.login}}</a>
+                    <a href="{{}}"></span>{{user.login}}</a>
                 </li>
             </div>
         </div>
-       <!--  <div class="col-md-8">
-            <h3 class="text-center">User Repos</h3>
-            <li class="list-group-item">
-                <span><h4><a href="https://github.com/afhaque/AhmedTheGame">Ahmed The Game</a></h4></span>
-                <span>Basic game demonstrating JQuery animations as part of lesson at Rutgers Coding Bootcamp.</span>
-            </li>
-            <li class="list-group-item">
-                <span><h4><a href="https://github.com/afhaque/angular-google-maps">Angular-Google-Maps</a></h4></span>
-                <span>AngularJS directives for the Google Maps Javascript API</span>
-            </li>
-            <li class="list-group-item">
-                <span><h4><a href="https://github.com/afhaque/angular.io">Angular.io</a></h4></span>
-                <span>Website for Angular 2</span>
-            </li>
-        </div>
-    </div> -->
-<!--     <div class="row">
-        <div class="col-md-10" ng-repeat="user in vm.articles">
-            <h2>{{user.login}}</h2>
-            <img src="{{user.avatar_url}}" alt="{{user.avatar_url}}">
-            <p>{{user.repos_url}}</p>
-        </div>
     </div>
-</div> -->
