@@ -4,10 +4,12 @@
    }
    
    .navbar-nav {
-       color: red;
+    color: red;
+
    }
    
    .carousel-inner {
+       margin-top: -20px;
        width: 100%;
        max-height: 600px !important;
    }
@@ -56,3 +58,14 @@
        background-color: #333333;
        color: white;
    }
+
+   /*Users*/
+
+  .search{
+    background-color: rgba(235, 235, 235, 0.54);
+    border-radius: 30px;
+    padding: 1%;
+  }
+  .results{
+    margin-top: 50px;
+  }
