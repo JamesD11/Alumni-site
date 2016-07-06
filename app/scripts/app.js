@@ -2,8 +2,6 @@ angular
     .module("ngApp", ["ui.bootstrap", "ui.router"])
     .config(function($stateProvider, $urlRouterProvider) {
 
-
-
         // Here we define our routes
         // $urlRouterProvied provides us index route if no path was specified in the url
         $urlRouterProvider.otherwise("/index");

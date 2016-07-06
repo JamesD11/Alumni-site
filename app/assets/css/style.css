@@ -4,8 +4,7 @@
    }
    
    .navbar-nav {
-    color: red;
-
+       color: red;
    }
    
    .carousel-inner {
@@ -57,23 +56,25 @@
        background-color: #333333;
        color: white;
    }
-
    /*Users*/
-
-  .search{
-    background-color: rgba(235, 235, 235, 0.54);
-    border-radius: 30px;
-    padding: 1%;
-  }
-  .results{
-    margin-top: 50px;
-  }
-  .social{
-    text-decoration: none;
-    list-style: none;
-  }
-  .social i{
-    font-size: 40px;
-    color: white;
-    padding: 5%;
-  }
+   
+   .search {
+       background-color: rgba(235, 235, 235, 0.54);
+       border-radius: 30px;
+       padding: 1%;
+   }
+   
+   .results {
+       margin-top: 50px;
+   }
+   
+   .social {
+       text-decoration: none;
+       list-style: none;
+   }
+   
+   .social i {
+       font-size: 40px;
+       color: white;
+       padding: 5%;
+   }
