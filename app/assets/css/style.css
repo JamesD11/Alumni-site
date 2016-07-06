@@ -69,3 +69,12 @@
   .results{
     margin-top: 50px;
   }
+  .social{
+    text-decoration: none;
+    list-style: none;
+  }
+  .social i{
+    font-size: 40px;
+    color: white;
+    padding: 5%;
+  }
