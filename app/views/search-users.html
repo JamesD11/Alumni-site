@@ -36,13 +36,12 @@
     </div>
     <!-- Users -->
     <div class="results row">
-        <div class="col-md-4" ng-repeat="user in vm.profiles">
-            <h3 class="text-center">{{user.login}}</h3>
+        <div class="profile col-md-4" ng-repeat="user in vm.profiles">
             <li class="list-group-item">
                 <img src="{{user.avatar_url}}" alt="{{user.login}}" class="img-rounded img-responsive" width="328" height="328">
             </li>
             <li class="list-group-item">
-                <span>{{user.url}}:</span>
+                <span><h3 class="text-center">{{user.login}}</h3></span>
                 <span></span>
             </li>
             <li class="list-group-item">
@@ -50,8 +49,8 @@
                 <span></span>
             </li>
             <li class="list-group-item">
-                <span>Link:</span>
-                <span><a href="{{}}">{{user.login}}</a></span>
+                <span>Connect:</span>
+                <span><a href="{{user.html_url}}" class="icoGithub" title="Github"><i class="fa fa-github"></i></a></span>
             </li>
         </div>
     </div>

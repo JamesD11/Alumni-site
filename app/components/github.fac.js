@@ -18,8 +18,18 @@
                 return $http.get('https://api.github.com/users')
             }
 
+            function getUserInfo() {
+                return $http.get('https://api.github.com/users/wpierscionek');
+            };
+
+            function getRepos() {
+                return $http.get('https://api.github.com/users/wpierscionek/repos');
+            };
+
             return {
-                getProfiles: getProfiles
+                getProfiles: getProfiles,
+                getUserInfo: getUserInfo,
+                getRepos: getRepos
             }
         });
 })();

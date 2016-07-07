@@ -24,7 +24,7 @@
    
    .left h2,
    p {
-      margin-top: 100px;
+       margin-top: 100px;
        margin-bottom: 40px;
    }
    
@@ -74,6 +74,17 @@
    .results {
        margin-top: 50px;
        margin-bottom: 50px;
+   }
+   
+   .profile {
+       margin-top: 50px;
+   }
+   .profile img:hover{
+      opacity: 0.3;
+   }
+   
+   .profile i {
+       font-size: 25px;
    }
    
    .social {

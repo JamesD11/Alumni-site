@@ -10,6 +10,8 @@
             var vm = this;
             vm.profiles;
             vm.articles;
+            vm.info;
+            vm.repos;
             vm.doSearch = doSearch;
 
 
@@ -19,10 +21,20 @@
                 console.log(vm.profiles);
                 // console.log(profiles);
             });
+            githubFactory.getUserInfo().then(function(info) {
+                vm.info = info.data;
+                // console.log(vm.profiles);
+                console.log(vm.info);
+            });
+            githubFactory.getRepos().then(function(repos) {
+                vm.repos = repos.data;
+                // console.log(vm.profiles);
+                console.log(vm.repos);
+            });
 
             redditFactory.getArticles().then(function(articles) {
                 vm.articles = articles.data;
-                console.log(vm.articles);
+                // console.log(vm.articles);
                 // console.log(articles);
             });
 
