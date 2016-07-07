@@ -10,14 +10,14 @@
             var vm = this;
             vm.profiles;
             vm.articles;
-
+            vm.query;
             vm.doSearch = doSearch;
 
 
 
             githubFactory.getProfiles().then(function(profiles) {
                 vm.profiles = profiles.data;
-                // console.log(vm.profiles);
+                console.log(vm.profiles);
                 // console.log(profiles);
             });
 
@@ -28,7 +28,9 @@
             });
 
             function doSearch() {
-                console.log(vm.searchTerm);
+                vm.query = vm.searchTerm;
+                alert(vm.query);
+                console.log(vm.query);
             }
 
         });
