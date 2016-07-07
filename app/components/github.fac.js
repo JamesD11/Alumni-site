@@ -4,7 +4,7 @@
 
     angular
         .module("ngApp")
-        .factory("redditFactory", function($http) {
+        .factory("githubFactory", function($http) {
 
 
             // var config ={
@@ -14,12 +14,12 @@
             // }
 
 
-            function getArticles() {
-                return $http.get('http://www.reddit.com/r/Coding/hot/.json')
+            function getProfiles() {
+                return $http.get('https://api.github.com/users')
             }
 
             return {
-                getArticles: getArticles
+                getProfiles: getProfiles
             }
         });
 })();
