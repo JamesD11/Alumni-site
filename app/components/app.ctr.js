@@ -10,7 +10,6 @@
             var vm = this;
             vm.profiles;
             vm.articles;
-            vm.query;
             vm.doSearch = doSearch;
 
 
