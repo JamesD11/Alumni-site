@@ -18,6 +18,11 @@ angular
                 templateUrl: '../views/search-users.html',
                 controller: 'appCTRL as vm'
             })
+            .state('details', {
+                url: '/details',
+                templateUrl: '../views/profile-page.html',
+                controller: 'appCTRL as vm'
+            })
             // If asking for news render templeUrl from
             .state('news', {
                 url: '/news',

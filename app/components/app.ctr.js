@@ -16,8 +16,7 @@
 
             githubFactory.getProfiles().then(function(profiles) {
                 vm.profiles = profiles.data;
-                console.log(vm.profiles);
-                // console.log(profiles);
+                // console.log(vm.profiles);
             });
 
             function githubSearch() {
