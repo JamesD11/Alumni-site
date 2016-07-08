@@ -16,7 +16,7 @@
 
             githubFactory.getProfiles().then(function(profiles) {
                 vm.profiles = profiles.data;
-                //console.log(vm.profiles);
+                console.log(vm.profiles);
                 // console.log(profiles);
             });
 
@@ -24,23 +24,20 @@
                 vm.githubQuery = vm.githubSearchTerm;
                 githubFactory.getUserInfo(vm.githubQuery).then(function(info) {
                     vm.githubInfo = info.data;
-                    // console.log(vm.profiles);
-                    console.log(vm.githubInfo);
+                    // console.log(vm.githubInfo);
                 });
                 githubFactory.getRepos(vm.githubQuery).then(function(repos) {
                     vm.repos = repos.data;
-                    // console.log(vm.profiles);
-                    console.log(vm.repos);
+                    // console.log(vm.repos);
                 });
-                console.log(vm.githubQuery);
             }
+
             function stackSearch() {
                 vm.stackQuery = vm.stackSearchTerm;
                 stackoverflowFactory.getUserInfo(vm.stackQuery).then(function(info) {
                     vm.stackInfo = info.data;
-                    console.log(vm.stackInfo);
+                    // console.log(vm.stackInfo);
                 });
-                console.log(vm.stackQuery);
             }
 
         });
