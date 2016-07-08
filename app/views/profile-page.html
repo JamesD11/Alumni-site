@@ -1,0 +1,60 @@
+<div id="topbar">
+    <a href="#index">Back to RCB Home</a>
+</div>
+<div id="w">
+    <div id="content" class="clearfix">
+        <div id="userphoto"><img src="../assets/images/avatar.png" alt="default avatar"></div>
+        <h1>Daniel Weierich</h1>
+        <h2>Company</h2>
+        <h2>Job Title</h2>
+        <h2>Location</h2>
+        <nav id="profiletabs">
+            <ul class="clearfix">
+                <li><a href="#bio" class="sel">About</a></li>
+                <li><a href="#activity">Skills</a></li>
+                <li><a href="#settings">Contact</a></li>
+            </ul>
+        </nav>
+        <section id="bio">
+            <p>Write something about yourself</p>
+            <p>Add more</p>
+            <p>Add more</p>
+        </section>
+        <section id="activity" class="hidden">
+            <p>My Skills</p>
+            <p class="activity">HTML</p>
+            <p class="activity">CSS</p>
+            <p class="activity">Javascript</p>
+            <p class="activity">Node.js</p>
+            <p class="activity">Handlebars</p>
+        </section>
+        <section id="settings" class="hidden">
+            <p>My Contact Information</p>
+            <p class="setting"><span>E-mail Address </span>default@gmail.com</p>
+            <p class="setting"><span>Phone </span>(123) 456-7890</p>
+            <p class="setting"><span>Github Account</span>GitHub username</p>
+            <p class="setting"><span>LinkedIn Profile</span>profile link</p>
+        </section>
+    </div>
+    <!-- @end #content -->
+</div>
+<!-- @end #w -->
+<script type="text/javascript">
+$(function() {
+    $('#profiletabs ul li a').on('click', function(e) {
+        e.preventDefault();
+        var newcontent = $(this).attr('href');
+
+        $('#profiletabs ul li a').removeClass('sel');
+        $(this).addClass('sel');
+
+        $('#content section').each(function() {
+            if (!$(this).hasClass('hidden')) {
+                $(this).addClass('hidden');
+            }
+        });
+
+        $(newcontent).removeClass('hidden');
+    });
+});
+</script>

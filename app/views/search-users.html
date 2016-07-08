@@ -44,7 +44,7 @@
     <div class="results row">
         <div class="profile col-md-4" ng-repeat="user in vm.profiles">
             <li class="list-group-item">
-                <img src="{{user.avatar_url}}" alt="{{user.login}}" class="img-rounded img-responsive" width="328" height="328">
+                <a href="#details"><img src="{{user.avatar_url}}" alt="{{user.login}}" class="img-rounded img-responsive" width="328" height="328"></a>
             </li>
             <li class="list-group-item">
                 <span><h3 class="text-center">{{user.login}}</h3></span>

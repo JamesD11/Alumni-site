@@ -7,13 +7,6 @@
         .factory("githubFactory", function($http) {
 
 
-            // var config ={
-            //     params: {
-            //         q: 'wpierscionek'
-            //     }
-            // }
-
-
             function getProfiles() {
                 return $http.get('https://api.github.com/users')
             }
@@ -35,5 +28,5 @@
 })();
 
 
-
+// RCB end-point
 // return $http.get('https://api.github.com/orgs/RutgersCodingBootcamp/members')
