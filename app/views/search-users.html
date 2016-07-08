@@ -18,4 +18,77 @@
         </div>
     </div>
 </nav>
-<h2>Search Users</h2>
+<!-- Container -->
+<div class="container">
+    <!-- Search -->
+    <div class="search row text-center">
+        <div class="col-md-12">
+            <img src="assets/images/search-01.png">
+            <form>
+                <div class="form-group col-sm-8 col-sm-offset-2">
+                    <input type="text" class="form-control" id="" placeholder="Username" ng-model="vm.searchTerm">
+                </div>
+                <div class="form-group col-sm-6 col-sm-offset-3">
+                    <button type="submit" class="btn btn-block btn-primary" ng-click="vm.doSearch()">Search</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- Users -->
+    <div class="results row">
+        <div class="profile col-md-4" ng-repeat="user in vm.profiles">
+            <li class="list-group-item">
+                <img src="{{user.avatar_url}}" alt="{{user.login}}" class="img-rounded img-responsive" width="328" height="328">
+            </li>
+            <li class="list-group-item">
+                <span><h3 class="text-center">{{user.login}}</h3></span>
+                <span></span>
+            </li>
+            <li class="list-group-item">
+                <span>Location:</span>
+                <span></span>
+            </li>
+            <li class="list-group-item">
+                <span>Connect:</span>
+                <span><a href="{{user.html_url}}" class="icoGithub" title="Github"><i class="fa fa-github"></i></a></span>
+            </li>
+        </div>
+    </div>
+</div>
+<!-- Footer -->
+<footer>
+    <div class="row">
+        <div class="info col-md-12">
+            <div class="col-md-1 col-md-offset-2">
+                <address>
+                    <h3>Campuses</h3>
+                    <hr>
+                    <p>5 Hanover Square Floor 25</p>
+                    <p>5 Hanover Square Floor 25</p>
+                    <p>5 Hanover Square Floor 25</p>
+                </address>
+            </div>
+            <div class="col-md-1">
+                <address>
+                    <h3>Info</h3>
+                    <hr>
+                    <p>5 Hanover Square Floor 25</p>
+                    <p>5 Hanover Square Floor 25</p>
+                    <p>5 Hanover Square Floor 25</p>
+                </address>
+            </div>
+            <div class="social col-md-1">
+                <h3>Connect</h3>
+                <hr>
+                <a href="#" class="icoRss" title="Rss"><i class="fa fa-rss"></i></a>
+                <a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a>
+                <a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a>
+                <a href="#" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a>
+                <a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+            </div>
+            <div class="col-md-1">
+                <img src="assets/images/rlogo.png">
+            </div>
+        </div>
+    </div>
+</footer>
