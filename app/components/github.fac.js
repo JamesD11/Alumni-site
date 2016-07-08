@@ -18,12 +18,12 @@
                 return $http.get('https://api.github.com/users')
             }
 
-            function getUserInfo() {
-                return $http.get('https://api.github.com/users/wpierscionek');
+            function getUserInfo(userName) {
+                return $http.get('https://api.github.com/users/' + userName);
             };
 
-            function getRepos() {
-                return $http.get('https://api.github.com/users/wpierscionek/repos');
+            function getRepos(userName) {
+                return $http.get('https://api.github.com/users/' + userName + '/repos');
             };
 
             return {

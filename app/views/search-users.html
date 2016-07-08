@@ -25,11 +25,17 @@
         <div class="col-md-12">
             <img src="assets/images/search-01.png">
             <form>
-                <div class="form-group col-sm-8 col-sm-offset-2">
-                    <input type="text" class="form-control" id="" placeholder="Username" ng-model="vm.searchTerm">
+                <div class="form-group col-sm-9">
+                    <input type="text" class="form-control" id="" placeholder="Github Username" ng-model="vm.githubSearchTerm">
                 </div>
-                <div class="form-group col-sm-6 col-sm-offset-3">
-                    <button type="submit" class="btn btn-block btn-primary" ng-click="vm.doSearch()">Search</button>
+                <div class="form-group col-sm-3">
+                    <button type="submit" class="btn btn-block btn-primary" ng-click="vm.githubSearch()">Search Github</button>
+                </div>
+                <div class="form-group col-sm-9">
+                    <input type="text" class="form-control" id="" placeholder="StackOverflow Username" ng-model="vm.stackSearchTerm">
+                </div>
+                <div class="form-group col-sm-3">
+                    <button type="submit" class="btn btn-block btn-primary" ng-click="vm.stackSearch()">Search StackOverflow</button>
                 </div>
             </form>
         </div>
