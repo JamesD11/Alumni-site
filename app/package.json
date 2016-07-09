@@ -37,6 +37,7 @@
     "passport": "^0.3.2",
     "passport-linkedin": "^1.0.0",
     "passport-linkedin-oauth2": "^1.4.1",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "sequelize": "^3.23.4"
   }
 }
