@@ -28,5 +28,10 @@ angular
                 url: '/news',
                 templateUrl: '../views/articles-page.html',
                 controller: 'appCTRL as vm'
+            })
+            .state('profile', {
+                url: '/profile',
+                templateUrl: '../views/profile-page.html',
+                controller: 'appCTRL as vm'
             });
     })
