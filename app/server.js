@@ -2,7 +2,7 @@
 
 var express 	= require('express');
 var bodyParser 	= require('body-parser');
-
+var path = require("path");
 var app = express();
 var PORT = process.env.PORT || 8050;
 
@@ -13,8 +13,11 @@ app.use(bodyParser.json({type:'application/vnd.api+json'}));
 
 
 // Routes here
+app.use(express.static(__dirname));
 
-
+app.use("*", function(req, res) {
+	res.sendFile(path.join(__dirname, "index.html"));
+});
 
 
 
