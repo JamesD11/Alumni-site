@@ -33,6 +33,7 @@ passport.use(new LinkedInStrategy({
 	//asynchronous verification
 	process.nextTick(function() {
 		//This profile object below contains all user information from linkedin
+		console.log(profile._json);
 		return done(null, profile);
 	});
 }));
