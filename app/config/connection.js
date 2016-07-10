@@ -1,5 +1,3 @@
-
-/* YOU NEED TO MAKE SEQUELIZE PART OF THE PACKAGE.JSON BEFORE RUNNING THIS*/
 var Sequelize = require("sequelize");
 
 var source = {
@@ -23,7 +21,7 @@ var source = {
 var selectedSource = source.jawsDB;
 
 // Connection using Sequelize
-var sequelize = new Sequelize(selectedSource.database, selectedSource.user, selectedSource.password, {
+var connection = new Sequelize(selectedSource.database, selectedSource.user, selectedSource.password, {
   host: selectedSource.host,
   dialect: 'mysql',
 
@@ -32,6 +30,6 @@ var sequelize = new Sequelize(selectedSource.database, selectedSource.user, sele
     min: 0,
     idle: 10000
   },
-
 });
-module.exports = sequelize;
+
+module.exports = connection;
