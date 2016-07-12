@@ -78,7 +78,7 @@ app.post('/neweventroutehere', function(req,res) {
           linked_in_profile: hplinked_in_profile,
           link_to_open_position:hplink_to_open_position,
      }).then(function() {
-          res.redirect('');
+          res.redirect('/news');
        });
 
 
