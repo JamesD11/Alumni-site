@@ -31,9 +31,19 @@ collaboration: connection.define('collaboration', {
   date_time:Sequelize.DATE,
   created_by:Sequelize.STRING,
   email:Sequelize.STRING,
-  linked_in_profile:Sequelize.STRING,
-  link_to_open_position:Sequelize.STRING,
-},{timestamps: false})
+
+},{timestamps: false}),
+
+//Do we want a skills table??
+// skills: DB.define('skills', {
+//   id: { type: Sequelize.INTEGER, primaryKey: true, autoIncrement: true},
+//   event_name:Sequelize.STRING,
+//   date_time:Sequelize.DATETIME,
+//   created_by:Sequelize.STRING,
+//   email:Sequelize.STRING,
+// },{timestamps: false}),
+//
+
 
 };
 
