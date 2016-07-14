@@ -1,7 +1,7 @@
 [{
 
     "id": "1",
-    "name": "Wojciech",
+    "title": "Wojciech",
     "bio": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.",
     "image": "http://bc.ctvnews.ca/polopoly_fs/1.2205032.1422218539!/httpImage/image.jpg_gen/derivatives/landscape_960/image.jpg",
     "skills": "HTML, CSS, Javascript",
