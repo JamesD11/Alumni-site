@@ -1,3 +1,4 @@
+var api= require('db_routes.js');
 angular
     .module("ngApp", ["ui.bootstrap", "ui.router"])
     .config(function($stateProvider, $urlRouterProvider) {
@@ -10,7 +11,7 @@ angular
             .state('index', { // specify this in html to get this route
                 url: '/index', // url address
                 templateUrl: '../views/main-page.html', // render this template
-                controller: 'appCTRL as vm' // using vm to specify appCTRL 
+                controller: 'appCTRL as vm' // using vm to specify appCTRL
             })
             // If asking for users render templeUrl from
             .state('users', {
@@ -34,4 +35,4 @@ angular
                 templateUrl: '../views/profile-page.html',
                 controller: 'appCTRL as vm'
             });
-    })
+    });
