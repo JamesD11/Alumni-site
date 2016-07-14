@@ -1,7 +1,7 @@
 var express    = require('express');
 var request    = require('request');
 var nodemailer = require('nodemailer');
-var bodyParser= require('body-parser');
+var bodyParser = require('body-parser');
 
 var connection = require('../config/sequelize.js');
 
@@ -12,26 +12,32 @@ module.exports = function(app) {
   //sample post for new sign in
   app.post('/newalumniroutehere',function(req,res) {
 
-        var ufirst_name     = req.body.ufirst_name;
-        var ulast_name      = req.body.ulast_name;
-        var uemail          = req.body.uemail;
-        var ucurrent_job    = req.body.ucurrent_job;
-        var uportfolio_link = req.body.uportfolio_link;
-        var uskills         = req.body.uskills;
+        var ufirst_name     = 'James';
+        var ulast_name      = 'D';
+        var uemail          = 'email@gmail.com';
+        var ucurrent_job    = 'being awesome';
+        var uportfolio_link = 'linkhere';
+        var uskills         = 'too many to list';
+        var ufront_end       = true;
+        var uback_end        = false;
+        var ufull_stack      = false;
 
-
-        connection.profile.create({
+        connection.profiles.create({
             first_name: ufirst_name,
             last_name: ulast_name,
             email: uemail,
-            current_job: ucurrent_job,
-            portfolio_link:uportfolio_link,
-            skills:uskills
-       }).then(function() {
-           // should nodemailer go here?
-        }).then(function() {
-            res.redirect('/index');// ?where should we send users after new user
-         });
+            current_job: ucurrent_job ,
+            portfolio_link: uportfolio_link,
+            skills: uskills,
+            front_end: ufront_end,
+            back_end:uback_end,
+            full_stack:ufull_stack
+          });
+            //  }).then(function() {
+            //      // should nodemailer go here?
+            //   }).then(function() {
+            //       res.redirect('/index');// ?where should we send users after new user
+            //    });
 
 
 });
@@ -46,7 +52,7 @@ app.post('/newpartnerroutehere', function(req,res) {
 
       //need to figure out front/back/full
 
-      connection.partner.create({
+      connection.partners.create({
           company_name: hpcompany_name,
           contact_person:hpcontact_person,
           email: hpemail,
@@ -71,7 +77,7 @@ app.post('/neweventroutehere', function(req,res) {
 
       //need to figure out front/back/full
 
-      connection.partner.create({
+      connection.partners.create({
           company_name: hpcompany_name,
           contact_person:hpcontact_person,
           email: hpemail,
@@ -86,6 +92,31 @@ app.post('/neweventroutehere', function(req,res) {
 
 
 //get routes
-
+app.get('/profile',function(req,res){
+    connection.profiles.findAll({
+      where:{
+          name: req.params.name
+      }
+    });
+});
 //get all user profiles by search
+
+app.get('/partner',function(req,res){
+    connection.partners.findAll({
+      where:{
+          name: req.params.name
+      }
+    });
+});
+
+
+
+
+
+
+
+
+
+
+
 };
