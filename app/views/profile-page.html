@@ -1,13 +1,30 @@
-<div id="topbar">
-    <a href="#index">Back to RCB Home</a>
-</div>
+<!-- Nav -->
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#index">Home</a></li>
+                <li><a href="#users">Users</a></li>
+                <li><a href="#news">News</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
 <div id="w">
     <div id="content" class="clearfix">
-        <div id="userphoto"><img src="../assets/images/avatar.png" alt="default avatar"></div>
-        <h1>Daniel Weierich</h1>
-        <h2>Company</h2>
-        <h2>Job Title</h2>
-        <h2>Location</h2>
+        <div id="userphoto"><img src="{{profile.image}}" alt="default avatar" width="150px" height="150px"></div>
+        <h2>{{profile.name}}</h2>
+        <h3>{{profile.company}}</h3>
+        <h3>{{profile.jobtitle}}</h3>
+        <h3>{{profile.location}}</h3>
         <nav id="profiletabs">
             <ul class="clearfix">
                 <li><a href="#bio" class="sel">About</a></li>
@@ -16,25 +33,107 @@
             </ul>
         </nav>
         <section id="bio">
-            <p>Write something about yourself</p>
-            <p>Add more</p>
-            <p>Add more</p>
+            <p>{{profile.bio}}</p>
+            <button class="btn btn-danger" ng-click="showEditBio = true; showEditSkills = true; showEditContact = true" ng-show="!showEditBio; !showEditSkills; !showEditSkills">Edit</button>
         </section>
         <section id="activity" class="hidden">
             <p>My Skills</p>
-            <p class="activity">HTML</p>
-            <p class="activity">CSS</p>
-            <p class="activity">Javascript</p>
-            <p class="activity">Node.js</p>
-            <p class="activity">Handlebars</p>
+            <p class="activity">{{profile.skillOne}}</p>
+            <p class="activity">{{profile.skillTwo}}</p>
+            <p class="activity">{{profile.skillThree}}</p>
+            <p class="activity">{{profile.skillFour}}</p>
+            <p class="activity">{{profile.skillFive}}</p>
         </section>
         <section id="settings" class="hidden">
             <p>My Contact Information</p>
-            <p class="setting"><span>E-mail Address </span>default@gmail.com</p>
-            <p class="setting"><span>Phone </span>(123) 456-7890</p>
-            <p class="setting"><span>Github Account</span>GitHub username</p>
-            <p class="setting"><span>LinkedIn Profile</span>profile link</p>
+            <p class="setting"><span>E-mail Address </span>{{profile.email}}</p>
+            <p class="setting"><span>Github Account</span>{{profile.github}}</p>
+            <p class="setting"><span>LinkedIn Profile</span>{{profile.linkedin}}</p>
         </section>
+        <div class="row">
+            <button class="btn btn-danger" ng-show="showEditBio" ng-click="editBio = true; editSkills = false; editContact = false">Main</button>
+            <button class="btn btn-danger" ng-show="showEditSkills" ng-click="editSkills = true; editBio = false; editContact = false">Skills</button>
+            <button class="btn btn-danger" ng-show="showEditContact" ng-click="editContact = true; editBio =false; editSkills = false">Contact</button>
+            <div class="col-md-12">
+                <form class="edit">
+                    <div class="row" ng-show="editBio">
+                        <hr>
+                        <H3 class="text-center">Profile</H3>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="name">Name:</label>
+                                <input type="text" class="form-control" ng-model="profile.name">
+                            </div>
+                            <div class="form-group">
+                                <label for="company">Company:</label>
+                                <input type="text" class="form-control" ng-model="profile.company">
+                            </div>
+                            <div class="form-group">
+                                <label for="jobtitle">Job Title:</label>
+                                <input type="text" class="form-control" ng-model="profile.jobtitle">
+                            </div>
+                            <div class="form-group">
+                                <label for="location">Location:</label>
+                                <input type="text" class="form-control" ng-model="profile.location">
+                            </div>
+                            <div class="form-group">
+                                <label for="bio">Bio:</label>
+                                <input type="text" class="form-control" ng-model="profile.bio">
+                            </div>
+                            <div class="form-group">
+                                <label for="image">Image:</label>
+                                <input type="text" class="form-control" ng-model="profile.image">
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row" ng-show="editSkills">
+                        <div class="col-md-12">
+                            <H3 class="text-center">Skills</H3>
+                            <div class="form-group">
+                                <label for="skills">Skills:</label>
+                                <input type="text" class="form-control" ng-model="profile.skillOne">
+                            </div>
+                            <div class="form-group">
+                                <label for="skills">Skills:</label>
+                                <input type="text" class="form-control" ng-model="profile.skillTwo">
+                            </div>
+                            <div class="form-group">
+                                <label for="skills">Skills:</label>
+                                <input type="text" class="form-control" ng-model="profile.skillThree">
+                            </div>
+                            <div class="form-group">
+                                <label for="skills">Skills:</label>
+                                <input type="text" class="form-control" ng-model="profile.skillFour">
+                            </div>
+                            <div class="form-group">
+                                <label for="skills">Skills:</label>
+                                <input type="text" class="form-control" ng-model="profile.skillFive">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" ng-show="editContact">
+                        <div class="col-md-12">
+                            <H3 class="text-center">Social</H3>
+                            <div class="form-group">
+                                <label for="email">Email:</label>
+                                <input type="text" class="form-control" ng-model="profile.email">
+                            </div>
+                            <div class="form-group">
+                                <label for="github">Github:</label>
+                                <input type="text" class="form-control" ng-model="profile.github">
+                            </div>
+                            <div class="form-group">
+                                <label for="linkedin">LinkedIn:</label>
+                                <input type="text" class="form-control" ng-model="profile.linkedin">
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn btn-danger" ng-hide="!showEditBio; !showEditSkills; !showEditSkills" ng-click="vm.saveProfile(profile); showEditBio = false; showEditSkills = false; showEditContact = false; editBio = false; editSkills = false; editContact = false">Save</button>
+                    <pre>{{profile | json}}</pre>
+                </form>
+            </div>
+        </div>
     </div>
     <!-- @end #content -->
 </div>

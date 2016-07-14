@@ -1,98 +1,123 @@
-   .navbar {
-       background-color: #ffffff;
-   }
-   
-   .navbar-nav {
-       color: red;
-   }
-   
-   .navbar-default .navbar-nav>li>a {
-       font-size: 15px;
-       color: black;
-   }
-   
-   .carousel-inner {
-       margin-top: -20px;
-       width: 100%;
-       max-height: 600px !important;
-   }
-   
-   .container {
-       margin-top: 100px;
-   }
-   
-   .left h2,
-   p {
-       margin-top: 100px;
-       margin-bottom: 40px;
-   }
-   
-   .left img {
-       margin-top: 0px;
-       margin-bottom: 60;
-   }
-   
-   .right h2,
-   p {
-       margin-top: 40px;
-   }
-   
-   .right img {
-       margin-top: 103px;
-   }
-   
-   .rules img {
-       padding-bottom: 5px;
-   }
-   
-   .partners {
-       margin-top: 100px;
-   }
-   
-   .hiring {
-       background-color: #f7f7f7;
-       padding: 1%;
-   }
-   
-   .join {
-       margin-top: 50px;
-   }
-   
-   footer {
-       background-color: #333333;
-       color: white;
-   }
-   /*Users*/
-   
-   .search {
-       background-color: rgba(235, 235, 235, 0.54);
-       border-radius: 30px;
-       padding: 1%;
-   }
-   
-   .results {
-       margin-top: 50px;
-       margin-bottom: 50px;
-   }
-   
-   .profile {
-       margin-top: 50px;
-   }
-   .profile img:hover{
-      opacity: 0.3;
-   }
-   
-   .profile i {
-       font-size: 25px;
-   }
-   
-   .social {
-       text-decoration: none;
-       list-style: none;
-   }
-   
-   .social i {
-       font-size: 40px;
-       color: white;
-       padding: 5%;
-   }
+h1,
+h2 {
+    font-size: 50px;
+    font-family: 'Lato', sans-serif;
+}
+
+
+/*Main Page*/
+
+.header {
+    background: url('../images/img-04.jpeg') center fixed no-repeat;
+    background-size: cover;
+    height: 950px;
+}
+
+#pageOne {
+    background-color: white;
+    background-size: cover;
+    height: 1100px;
+}
+
+#pageTwo {
+    background: url('../images/img-04.jpg') center fixed no-repeat;
+    background-size: cover;
+    height: 750px;
+}
+.container{
+    color: white;
+}
+
+.big-title {
+    text-decoration: none;
+    border: none;
+    margin-top: 350px;
+    color: white;
+    font-size: 60px;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: rgba(255, 0, 0, 0);
+    border-color: #ffffff;
+}
+
+.sign-in {
+    padding-top: 10px;
+}
+
+.edit {
+    padding-top: 20px;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+.left h2,
+p {
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.left img {
+    margin-top: 50px;
+    margin-bottom: 60;
+}
+
+.right h2,
+p {
+    margin-top: 40px;
+}
+
+.right img {
+    margin-top: 95px;
+}
+
+footer {
+    padding-top: 1%;
+    background-color: white;
+}
+
+.icons i {
+    padding-left: 1%;
+    font-size: 30px;
+    color: #333333;
+}
+
+
+/*Users*/
+
+.search {
+    background-color: rgba(235, 235, 235, 0.54);
+    border-radius: 30px;
+    padding: 1%;
+}
+
+.results {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.profile {
+    margin-top: 50px;
+}
+
+.profile img:hover {
+    opacity: 0.3;
+}
+
+.profile i {
+    font-size: 25px;
+}
+
+.social {
+    text-decoration: none;
+    list-style: none;
+}
+
+.social i {
+    font-size: 40px;
+    color: white;
+    padding: 5%;
+}

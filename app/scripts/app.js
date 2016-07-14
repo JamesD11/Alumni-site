@@ -12,21 +12,22 @@ angular
                 templateUrl: '../views/main-page.html', // render this template
                 controller: 'appCTRL as vm' // using vm to specify appCTRL 
             })
+            .state('profile', {
+                url: '/profile',
+                templateUrl: '../views/profile-page.html',
+                controller: 'appCTRL as vm'
+            })
             // If asking for users render templeUrl from
             .state('users', {
                 url: '/users',
                 templateUrl: '../views/search-users.html',
                 controller: 'appCTRL as vm'
             })
-            .state('details', {
-                url: '/details',
-                templateUrl: '../views/profile-page.html',
-                controller: 'appCTRL as vm'
-            })
-            // If asking for news render templeUrl from
-            .state('news', {
-                url: '/news',
-                templateUrl: '../views/articles-page.html',
-                controller: 'appCTRL as vm'
-            });
+
+        // If asking for news render templeUrl from
+        .state('news', {
+            url: '/news',
+            templateUrl: '../views/articles-page.html',
+            controller: 'appCTRL as vm'
+        });
     })
