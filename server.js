@@ -53,7 +53,7 @@ app.get('/auth/linkedin/callback', passport.authenticate('linkedin', {
 app.use(express.static(__dirname));
 
 app.use("*", function(req, res) {
-	res.sendFile(path.join(__dirname, "index.html"));
+	res.sendFile(path.join(__dirname, "./app/index.html"));
 });
 
 
