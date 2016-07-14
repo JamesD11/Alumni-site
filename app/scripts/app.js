@@ -1,6 +1,6 @@
 //var api= require('db_routes.js');
 angular
-    .module("ngApp", ["ui.bootstrap", "ui.router"])
+    .module("alumni", ["ui.bootstrap", "ui.router"])
     .config(function($stateProvider, $urlRouterProvider) {
 
         // Here we define our routes
@@ -36,3 +36,4 @@ angular
                 controller: 'appCTRL as vm'
             });
     });
+console.log('hit!');
