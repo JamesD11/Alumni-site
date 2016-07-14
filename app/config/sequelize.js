@@ -1,5 +1,5 @@
 var Sequelize  = require('sequelize');
-var connection = require('./connection.js');
+var connection = new Sequelize('mysql://of71bayir379ac47:fc9jpfxk1turzwo8@nj5rh9gto1v5n05t.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/ikisajrszmt14afb');
 
 var data = {
 
