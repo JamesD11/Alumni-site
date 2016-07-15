@@ -50,7 +50,7 @@ app.get('/auth/linkedin/callback', passport.authenticate('linkedin', {
 }));
 
 // Routes here
-app.use(express.static(__dirname));
+app.use(express.static(__dirname + "/app"));
 
 app.use("*", function(req, res) {
 	res.sendFile(path.join(__dirname, "./app/index.html"));
