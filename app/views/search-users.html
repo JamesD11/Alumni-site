@@ -8,11 +8,9 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <img src="assets/images/rcb-logo.png">
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#profile">Profile</a></li>
                 <li><a href="#index">Home</a></li>
                 <li><a href="#news">News</a></li>
             </ul>
@@ -45,57 +43,29 @@
     <div class="results row">
         <div class="profile col-md-4" ng-repeat="user in vm.profiles">
             <li class="list-group-item">
-                <a href="#details"><img src="{{user.avatar_url}}" alt="{{user.login}}" class="img-rounded img-responsive" width="328" height="328"></a>
+                <a href="#details"><img src="{{user.image}}" alt="" class="img-rounded img-responsive" width="328" height="328"></a>
             </li>
             <li class="list-group-item">
-                <span><h3 class="text-center">{{user.login}}</h3></span>
+                <span><h3 class="text-center">{{user.title}}</h3></span>
                 <span></span>
             </li>
             <li class="list-group-item">
-                <span>Location:</span>
+                <span><h3 class="text-center">{{user.bio}}</h3></span>
                 <span></span>
             </li>
             <li class="list-group-item">
-                <span>Connect:</span>
-                <span><a href="{{user.html_url}}" class="icoGithub" title="Github"><i class="fa fa-github"></i></a></span>
+                <span><h3>Skills</h3></span>
+                <span>{{user.skills}}:</span>
+            </li>
+            <li class="list-group-item">
+                <span><h3>Email</h3></span>
+                <span>{{user.email}}:</span>
+            </li>
+            <li class="list-group-item">
+                <span>Connect</span>
+                <span><a href="" class="icoGithub" title="Github"><i class="fa fa-github"></i></a></span>
+                <span><a href="" class="icoGithub" title="Github"><i class="fa fa-linkedin"></i></a></span>
             </li>
         </div>
     </div>
 </div>
-<!-- Footer -->
-<footer>
-    <div class="row">
-        <div class="info col-md-12">
-            <div class="col-md-1 col-md-offset-2">
-                <address>
-                    <h3>Campuses</h3>
-                    <hr>
-                    <p>5 Hanover Square Floor 25</p>
-                    <p>5 Hanover Square Floor 25</p>
-                    <p>5 Hanover Square Floor 25</p>
-                </address>
-            </div>
-            <div class="col-md-1">
-                <address>
-                    <h3>Info</h3>
-                    <hr>
-                    <p>5 Hanover Square Floor 25</p>
-                    <p>5 Hanover Square Floor 25</p>
-                    <p>5 Hanover Square Floor 25</p>
-                </address>
-            </div>
-            <div class="social col-md-1">
-                <h3>Connect</h3>
-                <hr>
-                <a href="#" class="icoRss" title="Rss"><i class="fa fa-rss"></i></a>
-                <a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a>
-                <a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a>
-                <a href="#" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a>
-                <a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a>
-            </div>
-            <div class="col-md-1">
-                <img src="assets/images/rlogo.png">
-            </div>
-        </div>
-    </div>
-</footer>

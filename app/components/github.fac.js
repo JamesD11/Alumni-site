@@ -8,7 +8,7 @@
 
 
             function getProfiles() {
-                return $http.get('https://api.github.com/users')
+                return $http.get('../data/data.json')
             }
 
             function getUserInfo(userName) {

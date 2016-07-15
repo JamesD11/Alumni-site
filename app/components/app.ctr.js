@@ -7,40 +7,42 @@
         // Inject necessary modules here
         .controller("appCTRL", function($scope, $http, githubFactory, stackoverflowFactory) {
             // this is pointing to functions so we don't use 'this' multiple times
-            // $http({
-            //   method: 'GET',
-            //   url: '/'
-            // }).then(function successCallback(response) {
-            //     // this callback will be called asynchronously
-            //     // when the response is available
-            //   }, function errorCallback(response) {
-            //     // called asynchronously if an error occurs
-            //     // or server returns response with an error status.
-            //   });
             var vm = this;
-            // vm.profiles;
-            // vm.info;
-            // vm.repos;
-            console.log('vm' + Object.keys(vm));
+            vm.profiles;
+            vm.profile;
+            vm.info;
+            vm.repos;
+
+            // Functions
+            vm.editProfile = editProfile;
+            vm.saveProfile = saveProfile;
             vm.githubSearch = githubSearch;
             vm.stackSearch = stackSearch;
 
             githubFactory.getProfiles().then(function(profiles) {
                 vm.profiles = profiles.data;
-                // console.log(vm.profiles);
+                console.log(profiles);
             });
+
+            function saveProfile(profile) {
+                if (profile) {
+                    vm.profiles.push(profile);
+                    console.log(vm.profiles);
+                }
+
+            }
 
             function githubSearch() {
                 vm.githubQuery = vm.githubSearchTerm;
                 githubFactory.getUserInfo(vm.githubQuery).then(function(info) {
                     vm.githubInfo = info.data;
-                    console.log(vm.githubInfo);
-               });
+                    // console.log(vm.githubInfo);
+                });
+
                 githubFactory.getRepos(vm.githubQuery).then(function(repos) {
                     vm.repos = repos.data;
-                    console.log(vm.repos);
-               });
-            
+                    // console.log(vm.repos);
+                });
             }
 
             function stackSearch() {
@@ -49,6 +51,11 @@
                     vm.stackInfo = info.data;
                     // console.log(vm.stackInfo);
                 });
+            }
+
+            function editProfile(profile) {
+                vm.profile = profile;
+                console.log(profile);
             }
 
         });
