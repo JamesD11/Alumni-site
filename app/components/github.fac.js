@@ -3,7 +3,7 @@
     "use strict";
 
     angular
-        .module("ngApp")
+        .module("alumni")
         .factory("githubFactory", function($http) {
 
 

@@ -3,7 +3,7 @@
     "use strict";
 
     angular
-        .module("ngApp")
+        .module("alumni")
         // Inject necessary modules here
         .controller("appCTRL", function($scope, $http, githubFactory, stackoverflowFactory) {
             // this is pointing to functions so we don't use 'this' multiple times

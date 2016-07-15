@@ -2,7 +2,7 @@
   "name": "alumni-site",
   "version": "1.0.0",
   "description": "RCB alumni community site",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -16,7 +16,9 @@
     "Angular",
     "Express",
     "RCB",
-    "alumni"
+    "alumni",
+    "Rutgers",
+    "Rutgers Coding bootcamp"
   ],
   "author": "Group- Adam S. Chris S. Dan D. Dhaval.D James D. Wojciech P.",
   "license": "MIT",
@@ -31,8 +33,15 @@
     "angular-ui-bootstrap": "^1.3.3",
     "angular-ui-router": "^0.3.1",
     "body-parser": "^1.15.2",
+    "cookie-parser": "^1.4.3",
     "express": "^4.14.0",
     "mysql": "^2.11.1",
-    "passport-linkedin": "^1.0.0"
+    "nodemailer": "^2.5.0",
+    "passport": "^0.3.2",
+    "passport-linkedin": "^1.0.0",
+    "passport-linkedin-oauth2": "^1.4.1",
+    "path": "^0.12.7",
+    "request": "^2.73.0",
+    "sequelize": "^3.23.4"
   }
 }

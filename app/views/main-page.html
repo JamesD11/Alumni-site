@@ -14,7 +14,9 @@
             <div class="big-title">
                 <h1 class="element"></h1>
             </div>
-            <button class="btn btn-primary">Already a member sign in here</button>
+            <a href="/auth/linkedin">
+                <button class="btn btn-primary">Already a member sign in here</button>
+            </a>
         </div>
     </div>
 </div>
@@ -72,20 +74,20 @@
 <!-- Footer -->
 <footer>
     <div class="row">
-        <div class="col-md-3 col-md-offset-1">
-            <img src="../assets/images/rcb-logo.png" alt="placeholder+image">
-        </div>
-        <div class="icons col-md-3 col-md-offset-5">
+            <div class="icons col-md-3 col-md-offset-1">
             <a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a>
             <a href="#" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a>
             <a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+        </div>
+        <div class="col-md-3 col-md-offset-4">
+            <img src="../assets/images/rcb-logo.png" alt="placeholder+image">
         </div>
     </div>
 </footer>
 <script>
 $(function() {
     $(".element").typed({
-        strings: ["Stay connected.", "Get involved.", "Rutgers coding bootcamp alumni."],
+        strings: ["Stay connected.", "Get involved.", "Rutgers coding bootcamp."],
         typeSpeed: 70
     });
 });

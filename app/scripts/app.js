@@ -1,5 +1,6 @@
+//var api= require('db_routes.js');
 angular
-    .module("ngApp", ["ui.bootstrap", "ui.router"])
+    .module("alumni", ["ui.bootstrap", "ui.router"])
     .config(function($stateProvider, $urlRouterProvider) {
 
         // Here we define our routes
@@ -10,12 +11,7 @@ angular
             .state('index', { // specify this in html to get this route
                 url: '/index', // url address
                 templateUrl: '../views/main-page.html', // render this template
-                controller: 'appCTRL as vm' // using vm to specify appCTRL 
-            })
-            .state('profile', {
-                url: '/profile',
-                templateUrl: '../views/profile-page.html',
-                controller: 'appCTRL as vm'
+                controller: 'appCTRL as vm' // using vm to specify appCTRL
             })
             // If asking for users render templeUrl from
             .state('users', {
@@ -23,11 +19,21 @@ angular
                 templateUrl: '../views/search-users.html',
                 controller: 'appCTRL as vm'
             })
-
-        // If asking for news render templeUrl from
-        .state('news', {
-            url: '/news',
-            templateUrl: '../views/articles-page.html',
-            controller: 'appCTRL as vm'
-        });
-    })
+            .state('details', {
+                url: '/details',
+                templateUrl: '../views/profile-page.html',
+                controller: 'appCTRL as vm'
+            })
+            // If asking for news render templeUrl from
+            .state('news', {
+                url: '/news',
+                templateUrl: '../views/articles-page.html',
+                controller: 'appCTRL as vm'
+            })
+            .state('profile', {
+                url: '/profile',
+                templateUrl: '../views/profile-page.html',
+                controller: 'appCTRL as vm'
+            });
+    });
+console.log('hit!');
