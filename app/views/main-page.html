@@ -11,7 +11,9 @@
     </div>
     <div class="row">
         <div class="col-md-12 text-center">
-            <h1 class="big-title">Lorem ipsum dolor sit amet.</h1>
+            <div class="big-title">
+                <h1 class="element"></h1>
+            </div>
             <button class="btn btn-primary">Already a member sign in here</button>
         </div>
     </div>
@@ -80,3 +82,11 @@
         </div>
     </div>
 </footer>
+<script>
+$(function() {
+    $(".element").typed({
+        strings: ["Stay connected.", "Get involved.", "Rutgers coding bootcamp alumni."],
+        typeSpeed: 70
+    });
+});
+</script>

@@ -7,12 +7,6 @@ h2 {
 
 /*Main Page*/
 
-.header {
-    background: url('../images/img-04.jpeg') center fixed no-repeat;
-    background-size: cover;
-    height: 950px;
-}
-
 #pageOne {
     background-color: white;
     background-size: cover;
@@ -24,22 +18,23 @@ h2 {
     background-size: cover;
     height: 750px;
 }
-.container{
-    color: white;
+
+.header {
+    background: url('../images/img-04.jpeg') center fixed no-repeat;
+    background-size: cover;
+    height: 950px;
+}
+
+.element {
+    display: inline;
+    font-size: 70px;
 }
 
 .big-title {
-    text-decoration: none;
-    border: none;
     margin-top: 350px;
     color: white;
-    font-size: 60px;
-}
-
-.btn-primary {
-    color: #fff;
-    background-color: rgba(255, 0, 0, 0);
-    border-color: #ffffff;
+    font-size: 70px;
+    margin-bottom: 50px;
 }
 
 .sign-in {
@@ -83,6 +78,10 @@ footer {
     padding-left: 1%;
     font-size: 30px;
     color: #333333;
+}
+
+.icons i:hover {
+    color: #c44444;
 }
 
 

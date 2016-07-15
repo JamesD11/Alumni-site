@@ -20,7 +20,21 @@
 </nav>
 <div id="w">
     <div id="content" class="clearfix">
-        <div id="userphoto"><img src="{{profile.image}}" alt="default avatar" width="150px" height="150px"></div>
+        <div id="userphoto"><img src="{{profile.image}}" alt="default avatar" width="150px" height="150px">
+            <br>
+            <div class="row">
+                <div class="col-md-12 col-md-offset-5">
+                    <button class="btn btn-danger" ng-click="showEditBio = true; showEditSkills = true; showEditContact = true" ng-show="!showEditBio; !showEditSkills; !showEditSkills">Edit</button>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <button class="btn btn-danger" ng-show="showEditBio" ng-click="editBio = true; editSkills = false; editContact = false">Main</button>
+                        <button class="btn btn-danger" ng-show="showEditSkills" ng-click="editSkills = true; editBio = false; editContact = false">Skills</button>
+                        <button class="btn btn-danger" ng-show="showEditContact" ng-click="editContact = true; editBio =false; editSkills = false">Contact</button>
+                    </div>
+                </div>
+            </div>
+        </div>
         <h2>{{profile.name}}</h2>
         <h3>{{profile.company}}</h3>
         <h3>{{profile.jobtitle}}</h3>
@@ -34,7 +48,6 @@
         </nav>
         <section id="bio">
             <p>{{profile.bio}}</p>
-            <button class="btn btn-danger" ng-click="showEditBio = true; showEditSkills = true; showEditContact = true" ng-show="!showEditBio; !showEditSkills; !showEditSkills">Edit</button>
         </section>
         <section id="activity" class="hidden">
             <p>My Skills</p>
@@ -51,14 +64,11 @@
             <p class="setting"><span>LinkedIn Profile</span>{{profile.linkedin}}</p>
         </section>
         <div class="row">
-            <button class="btn btn-danger" ng-show="showEditBio" ng-click="editBio = true; editSkills = false; editContact = false">Main</button>
-            <button class="btn btn-danger" ng-show="showEditSkills" ng-click="editSkills = true; editBio = false; editContact = false">Skills</button>
-            <button class="btn btn-danger" ng-show="showEditContact" ng-click="editContact = true; editBio =false; editSkills = false">Contact</button>
             <div class="col-md-12">
                 <form class="edit">
                     <div class="row" ng-show="editBio">
                         <hr>
-                        <H3 class="text-center">Profile</H3>
+                        <h3 class="text-center">Profile</h3>
                         <div class="col-md-12">
                             <div class="form-group">
                                 <label for="name">Name:</label>
@@ -89,7 +99,7 @@
                     <hr>
                     <div class="row" ng-show="editSkills">
                         <div class="col-md-12">
-                            <H3 class="text-center">Skills</H3>
+                            <h3 class="text-center">Skills</h3>
                             <div class="form-group">
                                 <label for="skills">Skills:</label>
                                 <input type="text" class="form-control" ng-model="profile.skillOne">
