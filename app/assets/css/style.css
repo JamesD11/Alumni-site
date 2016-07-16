@@ -10,13 +10,11 @@ h2 {
 #pageOne {
     background-color: white;
     background-size: cover;
-    height: 1100px;
 }
 
 #pageTwo {
     background: url('../images/img-04.jpg') center fixed no-repeat;
     background-size: cover;
-    height: 750px;
 }
 
 .header {
