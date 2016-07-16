@@ -34,6 +34,11 @@ angular
                 url: '/profile',
                 templateUrl: '../views/profile-page.html',
                 controller: 'appCTRL as vm'
+            })
+            .state('register', {
+                url: '/register',
+                templateUrl: '../views/register-page.html',
+                controller: 'appCTRL as vm'
             });
     });
 console.log('hit!');
