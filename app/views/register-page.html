@@ -1,66 +1,28 @@
-<div class="container">
-    <form class="register">
-        <div class="row">
-            <div class="col-md-12">
-                <h2 class="text-left">Create Account</h2>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-1 col-md-offset-2">
-                <h3>First Name</h3>
-            </div>
-            <div class="col-md-6">
-                <div class="form-group">
-                    <input type="text" class="form-control">
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-1 col-md-offset-2">
-                <h3>Last Name</h3>
-            </div>
-            <div class="col-md-6">
-                <div class="form-group">
-                    <input type="text" class="form-control">
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-1 col-md-offset-2">
-                <h3>Email</h3>
-            </div>
-            <div class="col-md-6">
-                <div class="form-group">
-                    <input type="text" class="form-control">
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-1 col-md-offset-2">
-                <h3>Password</h3>
-            </div>
-            <div class="col-md-6">
-                <div class="form-group">
-                    <input type="text" class="form-control">
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6 col-md-offset-3">
-                <button class="btn btn-success">Create Account</button>
-            </div>
-        </div>
-    </form>
-    <div class="row text-right">
+<ui-view></ui-view>
+<div class="register container" ng-hide="register">
+    <div class="row">
         <div class="col-md-12">
-            <br>
-            <a href="#index">Back to home</a>
+            <h2 class="text-left">Create Account</h2>
+            <hr>
         </div>
     </div>
-    <div class="row text-right">
-        <div class="col-md-12">
+    <div class="row">
+        <div class="col-md-3 col-md-offset-2 text-center">
+            <h3>Partner</h3>
+            <img src="../assets/images/partner.png" alt="placeholder+image ">
+            <button  ui-sref="register.partners"class="btn btn-primary " ng-click="register=true">Register</button>
+        </div>
+        <div class="col-md-3 col-md-offset-2 text-center ">
+            <h3>Alumni</h3>
+            <img src="../assets/images/student.png " alt="placeholder+image ">
+            <button ui-sref="register.alumni" class="btn btn-primary " ng-click="register=true">Register</button>
+        </div>
+    </div>
+    <hr>
+    <div class="row text-right ">
+        <div class="col-md-12 ">
             <br>
-            <a href="#profile">Temporary link to profile</a>
+            <a href="#home ">Temporary link to home</a>
         </div>
     </div>
 </div>

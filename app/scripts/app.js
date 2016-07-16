@@ -35,9 +35,27 @@ angular
                 templateUrl: '../views/profile-page.html',
                 controller: 'appCTRL as vm'
             })
+            // Signin
+            .state('signin', {
+                url: '/signin',
+                templateUrl: '../views/signin-page.html',
+                controller: 'appCTRL as vm'
+            })
+            // Register
             .state('register', {
                 url: '/register',
                 templateUrl: '../views/register-page.html',
+                controller: 'appCTRL as vm'
+            })
+            .state('register.partners', {
+                url: '/partners',
+                templateUrl: '../views/register-partners.html',
+                controller: 'appCTRL as vm'
+            })
+            // Register Alumni
+            .state('register.alumni', {
+                url: '/alumni',
+                templateUrl: '../views/register-alumni.html',
                 controller: 'appCTRL as vm'
             });
     });
