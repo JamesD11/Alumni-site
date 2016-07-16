@@ -119,6 +119,13 @@ footer {
     padding: 5%;
 }
 
+/*Signin*/
+.signin{
+    margin-top: 150px;
+}
+.signin img:hover {
+    opacity: 0.3;
+}
 
 /*Register*/
 

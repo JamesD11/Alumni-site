@@ -35,6 +35,11 @@ angular
                 templateUrl: '../views/profile-page.html',
                 controller: 'appCTRL as vm'
             })
+            .state('signin', {
+                url: '/signin',
+                templateUrl: '../views/signin-page.html',
+                controller: 'appCTRL as vm'
+            })
             .state('register', {
                 url: '/register',
                 templateUrl: '../views/register-page.html',
