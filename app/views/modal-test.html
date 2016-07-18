@@ -1,24 +1,32 @@
 <div class="modal-header">
-    <h3>I am a modal!</h3>
+    <h2>{{selected.account.title}}</h2>
 </div>
 <div class="modal-body">
-    <form class="form-horizontal" role="form">
-        <div class="form-group">
-            <label for="email" class="col-lg-2 control-label">Email Address:</label>
-            <div class="col-lg-10">
-                <input type="text" class="form-control" id="email" ng-model="selected.account.email" ng-value="selected.account.email">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <img src="{{selected.account.image}}" width="300px" height="250px" />
-                            <h1>{{selected.account.title}}</h1>
-                            <p>{{selected.account.bio}}</p>
-                        </div>
-                    </div>
-                </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <h3 class="text-center">About</h3>
+                <p>{{selected.account.bio}}</p>
+            </div>
+            <div class="col-md-3">
+                <img src="{{selected.account.image}}" alt="placeholder+image" class="thumbnail">
             </div>
         </div>
-        <div class="modal-footer">
-            <button class="btn btn-primary" ng-click="ok()">OK</button>
-            <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
+        <div class="row">
+            <div class="col-md-3">
+                <h3 class="text-center">Skills</h3>
+                <p class="text-center">{{selected.account.skills}}</p>
+            </div>
+            <div class="col-md-3">
+                <h3 class="text-center">Contact</h3>
+                <p class="text-center">{{selected.account.email}}</p>
+                <p class="text-center">{{selected.account.linkedin}}</p>
+                <p class="text-center">{{selected.account.github}}</p>
+            </div>
         </div>
+    </div>
+</div>
+<div class="modal-footer">
+    <button class="btn btn-primary" ng-click="ok()">OK</button>
+    <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
+</div>

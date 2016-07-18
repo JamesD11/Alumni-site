@@ -41,7 +41,6 @@ passport.use(new LinkedInStrategy({
 app.get('/auth/linkedin',
 	passport.authenticate('linkedin', { state: 'SOME STATE' }),
 	function(req, res){
-
 	});
 
 app.get('/auth/linkedin/callback', passport.authenticate('linkedin', {

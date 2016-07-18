@@ -24,18 +24,17 @@
         <div class="col-md-4" ng-repeat="account in userAccounts ">
             <div class="card ">
                 <div class="card-image ">
-                    <img src="{{account.image}} " alt=" " class="img-rounded img-responsive " width="555px " height="229px ">
+                    <a href="" ng-click="open(account)"><img src="{{account.image}} " alt=""></a>
                     <span class="card-title ">{{account.title}}</span>
                 </div>
                 <div class="card-content ">
                     <p>{{account.bio}}</p>
                     <hr>
-                    <p>Email: {{account.email}}</p>
+                    <p><i class="fa fa-envelope" aria-hidden="true"></i> {{account.email}}</p>
                 </div>
                 <div class="card-action ">
                     <span><a href=" " class="icoGithub " title="Github "><i class="fa fa-github "></i></a></span>
                     <span><a href=" " class="icoGithub " title="Github "><i class="fa fa-linkedin "></i></a></span>
-                    <button class="btn-info" ng-click="open(account)">View</button>
                 </div>
             </div>
         </div>
