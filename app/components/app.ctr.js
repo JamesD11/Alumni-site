@@ -5,13 +5,12 @@
     angular
         .module("alumni")
         // Inject necessary modules here
-        .controller("appCTRL", function($scope, $http, githubFactory, stackoverflowFactory) {
+        .controller("appCTRL", function($scope, $http, githubFactory, stackoverflowFactory, $uibModal, $log) {
             // this is pointing to functions so we don't use 'this' multiple times
             var vm = this;
-            vm.profiles;
-            vm.profile;
             vm.info;
             vm.repos;
+            vm.bla;
 
             // Functions
             vm.editProfile = editProfile;
@@ -20,14 +19,15 @@
             vm.stackSearch = stackSearch;
 
             githubFactory.getProfiles().then(function(profiles) {
-                vm.profiles = profiles.data;
+                $scope.userAccounts = profiles.data;
                 console.log(profiles);
+                console.log($scope.userAccounts);
             });
 
             function saveProfile(profile) {
                 if (profile) {
-                    vm.profiles.push(profile);
-                    console.log(vm.profiles);
+                    $scope.userAccounts.push(profile);
+                    console.log($scope.userAccounts);
                 }
 
             }
@@ -58,6 +58,6 @@
                 console.log(profile);
             }
 
-        });
 
+        });
 })();

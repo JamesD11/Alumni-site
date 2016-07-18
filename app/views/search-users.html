@@ -18,54 +18,26 @@
     </div>
 </nav>
 <!-- Container -->
-<div class="container">
-    <!-- Search -->
-    <div class="search row text-center">
-        <div class="col-md-12">
-            <img src="assets/images/search-01.png">
-            <form>
-                <div class="form-group col-sm-9">
-                    <input type="text" class="form-control" id="" placeholder="Github Username" ng-model="vm.githubSearchTerm">
+<div class="container " ng-controller="modalCTRL ">
+    <div class="row ">
+        <!-- Card Projects -->
+        <div class="col-md-4" ng-repeat="account in userAccounts ">
+            <div class="card ">
+                <div class="card-image ">
+                    <img src="{{account.image}} " alt=" " class="img-rounded img-responsive " width="555px " height="229px ">
+                    <span class="card-title ">{{account.title}}</span>
                 </div>
-                <div class="form-group col-sm-3">
-                    <button type="submit" class="btn btn-block btn-primary" ng-click="vm.githubSearch()">Search Github</button>
+                <div class="card-content ">
+                    <p>{{account.bio}}</p>
+                    <hr>
+                    <p>Email: {{account.email}}</p>
                 </div>
-                <div class="form-group col-sm-9">
-                    <input type="text" class="form-control" id="" placeholder="StackOverflow Username" ng-model="vm.stackSearchTerm">
+                <div class="card-action ">
+                    <span><a href=" " class="icoGithub " title="Github "><i class="fa fa-github "></i></a></span>
+                    <span><a href=" " class="icoGithub " title="Github "><i class="fa fa-linkedin "></i></a></span>
+                    <button class="btn-info" ng-click="open(account)">View</button>
                 </div>
-                <div class="form-group col-sm-3">
-                    <button type="submit" class="btn btn-block btn-primary" ng-click="vm.stackSearch()">Search StackOverflow</button>
-                </div>
-            </form>
-        </div>
-    </div>
-    <!-- Users -->
-    <div class="results row">
-        <div class="profile col-md-4" ng-repeat="user in vm.profiles">
-            <li class="list-group-item">
-                <a href="#details"><img src="{{user.image}}" alt="" class="img-rounded img-responsive" width="328" height="328"></a>
-            </li>
-            <li class="list-group-item">
-                <span><h3 class="text-center">{{user.title}}</h3></span>
-                <span></span>
-            </li>
-            <li class="list-group-item">
-                <span><h3 class="text-center">{{user.bio}}</h3></span>
-                <span></span>
-            </li>
-            <li class="list-group-item">
-                <span><h3>Skills</h3></span>
-                <span>{{user.skills}}:</span>
-            </li>
-            <li class="list-group-item">
-                <span><h3>Email</h3></span>
-                <span>{{user.email}}:</span>
-            </li>
-            <li class="list-group-item">
-                <span>Connect</span>
-                <span><a href="" class="icoGithub" title="Github"><i class="fa fa-github"></i></a></span>
-                <span><a href="" class="icoGithub" title="Github"><i class="fa fa-linkedin"></i></a></span>
-            </li>
+            </div>
         </div>
     </div>
 </div>
