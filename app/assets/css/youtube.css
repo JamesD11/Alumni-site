@@ -1,18 +1,18 @@
 .playlist {
     color: #444444;
-    font-size: 16px;
+    font-size: 10px;
     height: 450px;
     overflow-x: hidden;
     list-style: none;
 }
 
-#current {
+.current {
     color: #444444;
     font-size: 20px;
 }
 
-#playlist li {
-    cursor: pointer;
+.playlist li {
+    text-align: left;
     list-style: none;
     cursor: pointer;
 }

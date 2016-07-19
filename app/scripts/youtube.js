@@ -141,8 +141,6 @@ app.controller('VideosController', function($scope, $http, $log, VideosService, 
 
     $scope.launch = function(id, title) {
         VideosService.launchPlayer(id, title);
-        VideosService.archiveVideo(id, title);
-        VideosService.deleteVideo($scope.upcoming, id);
         $log.info('Launched id:' + id + ' and title:' + title);
     };
 
