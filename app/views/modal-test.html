@@ -24,6 +24,10 @@
                 <p class="text-center">LinkedIn {{selected.account.linkedin}}</p>
                 <p class="text-center">Github {{selected.account.github}}</p>
             </div>
+            <div class="container" ng-repeat="github in info">
+                <p>{{github.location}}</p>
+                <p>{{github.login}}</p>
+            </div>
         </div>
     </div>
 </div>

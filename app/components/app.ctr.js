@@ -12,7 +12,8 @@
             vm.repos;
             vm.bla;
 
-            // Functionsvm.editProfile = editProfile;
+            // Functions
+            vm.editProfile = editProfile;
             vm.saveProfile = saveProfile;
             vm.githubSearch = githubSearch;
             vm.stackSearch = stackSearch;
@@ -35,12 +36,16 @@
 
             }
 
-            function githubSearch() {
-                vm.githubQuery = vm.githubSearchTerm;
+            function githubSearch(account) {
+                var info = [];
+                vm.githubQuery = account.title;
+                console.log(vm.githubQuery);
                 githubFactory.getUserInfo(vm.githubQuery).then(function(info) {
                     vm.githubInfo = info.data;
-                    // console.log(vm.githubInfo);
+                    console.log(vm.githubInfo);
                 });
+                                    info.push(account);
+                    console.log(account[0]);
 
                 githubFactory.getRepos(vm.githubQuery).then(function(repos) {
                     vm.repos = repos.data;
