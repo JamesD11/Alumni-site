@@ -47,25 +47,27 @@
         </div>
     </div>
     <div id="pageTwo">
-        <div class="container">
+        <div class="container" data-ng-app="JukeTubeApp" data-ng-controller="VideosController">
             <!-- Student projects -->
             <div class="row">
                 <div class="col-md-12 text-center">
                     <h2>Student Projects</h2>
                 </div>
-                <div class="col-md-8">
-                    <img src="http://dummyimage.com/700x500/4d494d/686a82.gif&text=placeholder+image" alt="placeholder+image">
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div id="player">
+                        <div id="placeholder"></div>
+                    </div>
                 </div>
-                <div class="col-md-4">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt eos mollitia eius culpa, praesentium beatae, iure tempora ullam nulla hic consectetur dolor quasi, possimus nisi veritatis quibusdam magni repellendus cum.</p>
-                    <hr>
-                </div>
-                <div class="col-md-4">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt eos mollitia eius culpa, praesentium beatae, iure tempora ullam nulla hic consectetur dolor quasi, possimus nisi veritatis quibusdam magni repellendus cum.</p>
-                    <hr>
-                </div>
-                <div class="col-md-4">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt eos mollitia eius culpa, praesentium beatae, iure tempora ullam nulla hic consectetur dolor quasi, possimus nisi veritatis quibusdam magni repellendus cum.</p>
+            </div>
+            <div class="row">
+                <div id="playlist">
+                    <p id="current" class="text-center">{{ youtube.videoTitle }}</p>
+                    <div class="col-md-6">
+                        <li data-ng-repeat="video in results" ">
+                            <p class="item-title " data-ng-click="launch(video.id, video.title) ">{{video.title}}</p>
+                        </li>
                 </div>
             </div>
         </div>
@@ -73,21 +75,21 @@
 </body>
 <!-- Footer -->
 <footer>
-    <div class="row">
-        <div class="icons col-md-3 col-md-offset-1">
-            <a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a>
-            <a href="#" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a>
-            <a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+    <div class="row ">
+        <div class="icons col-md-3 col-md-offset-1 ">
+            <a href="# " class="icoTwitter " title="Twitter "><i class="fa fa-twitter "></i></a>
+            <a href="# " class="icoGoogle " title="Google + "><i class="fa fa-google-plus "></i></a>
+            <a href="# " class="icoLinkedin " title="Linkedin "><i class="fa fa-linkedin "></i></a>
         </div>
-        <div class="col-md-3 col-md-offset-4">
-            <img src="../assets/images/rcb-logo.png" alt="placeholder+image">
+        <div class="col-md-3 col-md-offset-4 ">
+            <img src="../assets/images/rcb-logo.png " alt="placeholder+image ">
         </div>
     </div>
 </footer>
 <script>
 $(function() {
-    $(".element").typed({
-        strings: ["Stay connected.", "Get involved.", "Rutgers coding bootcamp."],
+    $(".element ").typed({
+        strings: ["Stay connected. ", "Get involved. ", "Rutgers coding bootcamp. "],
         typeSpeed: 70
     });
 });

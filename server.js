@@ -7,7 +7,7 @@ var path 		= require("path");
 var passport 	= require('passport');
 var LinkedInStrategy = require('passport-linkedin-oauth2').Strategy;
 var app = express();
-var PORT = process.env.PORT || 3000;
+var PORT = process.env.PORT || 3200;
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));

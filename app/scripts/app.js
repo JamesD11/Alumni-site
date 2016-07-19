@@ -1,6 +1,6 @@
 //var api= require('db_routes.js');
 angular
-    .module("alumni", ["ui.bootstrap", "ui.router"])
+    .module("alumni", ["ui.bootstrap", "ui.router", "player"])
     .config(function($stateProvider, $urlRouterProvider) {
 
         // Here we define our routes

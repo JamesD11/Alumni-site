@@ -1,0 +1,40 @@
+#playlist {
+    color: #444444;
+    font-size: 16px;
+    height: 410px;
+    overflow-x: hidden;
+    width: 570px;
+}
+
+#current {
+    color: #444444;
+    font-size: 20px;
+}
+
+#playlist ol,
+#playlist li {
+    cursor: pointer;
+}
+
+#playlist ol {
+    border-bottom: 1px solid #EDEDED;
+    width: 500px;
+    overflow-x: hidden;
+}
+
+#playlist li {
+    border-top: 1px solid #EDEDED;
+    cursor: pointer;
+    width: 500px;
+}
+
+.item-title {
+    margin-right: 80px;
+    padding: 10px 20px;
+}
+
+.item-title:hover {
+    background: #1171A2;
+    color: white;
+}
+
