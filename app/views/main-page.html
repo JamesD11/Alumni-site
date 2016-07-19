@@ -60,17 +60,13 @@
                         <div id="placeholder"></div>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div id="playlist">
+                <div class="playlist col-md-4 col-md-offset-2">
                     <p id="current" class="text-center">{{ youtube.videoTitle }}</p>
-                    <div class="col-md-6">
-                        <li data-ng-repeat="video in results" ">
+                    <li data-ng-repeat="video in results" ">
                             <p class="item-title " data-ng-click="launch(video.id, video.title) ">{{video.title}}</p>
                         </li>
                 </div>
             </div>
-        </div>
     </div>
 </body>
 <!-- Footer -->

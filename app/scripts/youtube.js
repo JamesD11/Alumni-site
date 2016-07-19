@@ -27,8 +27,8 @@ app.service('VideosService', ['$window', '$rootScope', '$log', function($window,
         playerId: null,
         videoId: null,
         videoTitle: null,
-        playerHeight: '425',
-        playerWidth: '550',
+        playerHeight: '450',
+        playerWidth: '720',
         state: 'stopped'
     };
     var results = [];

@@ -1,9 +1,9 @@
-#playlist {
+.playlist {
     color: #444444;
     font-size: 16px;
-    height: 410px;
+    height: 450px;
     overflow-x: hidden;
-    width: 570px;
+    list-style: none;
 }
 
 #current {
@@ -11,24 +11,14 @@
     font-size: 20px;
 }
 
-#playlist ol,
 #playlist li {
     cursor: pointer;
-}
-
-#playlist ol {
-    border-bottom: 1px solid #EDEDED;
-    width: 500px;
-    overflow-x: hidden;
-}
-
-#playlist li {
-    border-top: 1px solid #EDEDED;
+    list-style: none;
     cursor: pointer;
-    width: 500px;
 }
 
 .item-title {
+     border-bottom: 1px solid #444444;
     margin-right: 80px;
     padding: 10px 20px;
 }
@@ -37,4 +27,3 @@
     background: #1171A2;
     color: white;
 }
-
