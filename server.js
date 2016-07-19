@@ -1,3 +1,4 @@
+
 //Boilerplate server file- to be modified as needed
 
 var express 	= require('express');
@@ -33,14 +34,17 @@ passport.use(new LinkedInStrategy({
 	//asynchronous verification
 	process.nextTick(function() {
 		//This profile object below contains all user information from linkedin
-		console.log(profile._json);
+		// console.log(profile._json);
 		return done(null, profile);
+		console.log(profile.summary);
+
 	});
 }));
 
 app.get('/auth/linkedin',
 	passport.authenticate('linkedin', { state: 'SOME STATE' }),
 	function(req, res){
+
 	});
 
 app.get('/auth/linkedin/callback', passport.authenticate('linkedin', {

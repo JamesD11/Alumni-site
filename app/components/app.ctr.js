@@ -12,17 +12,20 @@
             vm.repos;
             vm.bla;
 
-            // Functions
-            vm.editProfile = editProfile;
+            // Functionsvm.editProfile = editProfile;
             vm.saveProfile = saveProfile;
             vm.githubSearch = githubSearch;
             vm.stackSearch = stackSearch;
 
             githubFactory.getProfiles().then(function(profiles) {
                 $scope.userAccounts = profiles.data;
-                console.log(profiles);
-                console.log($scope.userAccounts);
+                // console.log(profiles);
+                // console.log($scope.userAccounts);
+                $scope.categories = getCategories($scope.userAccounts);
+                console.log($scope.categories);
             });
+
+
 
             function saveProfile(profile) {
                 if (profile) {
@@ -56,6 +59,26 @@
             function editProfile(profile) {
                 vm.profile = profile;
                 console.log(profile);
+            }
+
+
+
+            function getCategories(userAccounts) {
+                var categories = [];
+                // console.log(skills[0]);
+                angular.forEach(userAccounts, function(item) {
+                    // console.log(item);
+                    angular.forEach(item.categories, function(category) {
+                        // console.log(category);
+                        categories.push(category);
+                    });
+                });
+                // console.log(categories[0]);
+                // console.log(categories[1]);
+
+                return _.uniq(categories);
+
+
             }
 
 
