@@ -113,6 +113,9 @@ footer {
     padding: 5%;
 }
 
+.skills,
+.contact {}
+
 
 /*User search cards*/
 
@@ -194,11 +197,12 @@ footer {
     color: #ffd8a6;
     text-decoration: none;
 }
+
 .search-box {
     font-size: 20px;
 }
+
 .search {
     display: inline;
     font-size: 20px;
 }
-

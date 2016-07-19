@@ -38,9 +38,9 @@
             account: $scope.userAccounts[accountIndex]
         };
 
-        $scope.ok = function() {
-            $uibModalInstance.close($scope.selected.account);
-        };
+        // $scope.ok = function() {
+        //     $uibModalInstance.close($scope.selected.account);
+        // };
 
         $scope.cancel = function() {
             $uibModalInstance.dismiss('cancel');
