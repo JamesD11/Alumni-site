@@ -1,17 +1,22 @@
 h1 {
     font-size: 50px;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Oswald', sans-serif;
 }
 
 h2 {
     font-size: 35px;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Oswald', sans-serif;
 }
 
 h3 {
     font-size: 25px;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Oswald', sans-serif;
 }
+p{
+     font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+}
+
 
 /*Main Page*/
 
@@ -30,6 +35,27 @@ h3 {
     background-size: cover;
     height: 950px;
 }
+
+.navbar-default .navbar-nav>li>a {
+    font-family: 'Oswald', sans-serif;
+    font-size: 17px;
+    color: #333333;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+    transition: color 0.3s ease;
+    color: #c44444;
+}
+
+
+/*.navbar-nav>li>a{
+    color: #333333;
+}
+.navbar-nav>li>a:hover{
+    transition: color 0.3s ease;
+    color: #c44444;
+
+}*/
 
 .element {
     display: inline;
@@ -88,6 +114,7 @@ footer {
 }
 
 .icons i:hover {
+    transition: color 0.3s ease;
     color: #c44444;
 }
 
@@ -197,14 +224,14 @@ footer {
 
 .card .card-action a {
     font-size: 20px;
-    color: #ffab40;
+    color: #333333;
     margin-right: 16px;
     transition: color 0.3s ease;
     text-transform: uppercase;
 }
 
 .card .card-action a:hover {
-    color: #ffd8a6;
+    color: #c44444;
     text-decoration: none;
 }
 
