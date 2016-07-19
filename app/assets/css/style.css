@@ -194,3 +194,11 @@ footer {
     color: #ffd8a6;
     text-decoration: none;
 }
+.search-box {
+    font-size: 20px;
+}
+.search {
+    display: inline;
+    font-size: 20px;
+}
+

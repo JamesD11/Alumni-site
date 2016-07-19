@@ -16,13 +16,13 @@
             vm.saveProfile = saveProfile;
             vm.githubSearch = githubSearch;
             vm.stackSearch = stackSearch;
-
+            // 
             githubFactory.getProfiles().then(function(profiles) {
                 $scope.userAccounts = profiles.data;
                 // console.log(profiles);
                 // console.log($scope.userAccounts);
                 $scope.categories = getCategories($scope.userAccounts);
-                console.log($scope.categories);
+                // console.log($scope.categories);
             });
 
 
@@ -68,7 +68,7 @@
                 // console.log(skills[0]);
                 angular.forEach(userAccounts, function(item) {
                     // console.log(item);
-                    angular.forEach(item.categories, function(category) {
+                    angular.forEach(item.skills, function(category) {
                         // console.log(category);
                         categories.push(category);
                     });
