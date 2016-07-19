@@ -187,6 +187,7 @@ footer {
 }
 
 .card .card-action a {
+    font-size: 20px;
     color: #ffab40;
     margin-right: 16px;
     transition: color 0.3s ease;
