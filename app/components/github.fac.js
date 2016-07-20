@@ -23,7 +23,7 @@
             return {
                 getProfiles: getProfiles,
                 getUserInfo: getUserInfo,
-                // getRepos: getRepos
+                getRepos: getRepos
             }
         });
 })();
