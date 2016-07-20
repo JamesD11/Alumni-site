@@ -23,33 +23,17 @@
                     <h3>{{results.github.login}}</h3>
                 </li>
             </div>
-            <div class="col-md-6">
+            <div class="list col-md-6">
                 <h3 class="text-center">User Repos</h3>
                 <li class="list-group-item" ng-repeat="item in repos">
-                    <span><h4><a href="{{}}">{{item.name}}</a></h4></span>
-                    <span>Basic game demonstrating JQuery animations as part of lesson at Rutgers Coding Bootcamp.</span>
+                    <span><h4><a href="{{item.html_url}}">{{item.name}}</a></h4></span>
+                    <span>{{item.description}}</span>
                 </li>
             </div>
         </div>
+        <br>
     </div>
     <div class="modal-footer">
         <!-- <button class="btn btn-primary" ng-click="ok()">OK</button> -->
         <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
     </div>
-    <!--            <div class="col-md-3">
-                <h3>Skills</h3>
-                <p class="text-center">{{selected.account.skills}}</p>
-            </div>
-            <div class="col-md-3">
-                <h3>Contact</h3>
-                <p class="text-center">Email {{selected.account.email}}</p>
-                <p class="text-center">LinkedIn {{selected.account.linkedin}}</p>
-                <p class="text-center">Github {{selected.account.github}}</p>
-            </div> -->
-    <!-- <div class="row">
-    <div class="col-md-6">
-        <h2>{{results.github.location}}</h2>
-        <h2>{{results.github.login}}</h2>
-    </div>
-</div>
- -->

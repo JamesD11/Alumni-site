@@ -12,8 +12,9 @@ h3 {
     font-size: 25px;
     font-family: 'Oswald', sans-serif;
 }
-p{
-     font-size: 15px;
+
+p {
+    font-size: 15px;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -244,11 +245,7 @@ footer {
     font-size: 20px;
 }
 
-.repos{
- /*   height: 200px;
-    width: 200px;
-    overflow-y: hidden;
+.list {
+    height: 450px;
     overflow-x: hidden;
-
-    background-color: black;*/
 }
