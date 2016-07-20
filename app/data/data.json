@@ -1,31 +1,82 @@
 [{
 
-        "id": "1",
-        "title": "Wojciech",
-        "bio": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.",
-        "image": "http://bc.ctvnews.ca/polopoly_fs/1.2205032.1422218539!/httpImage/image.jpg_gen/derivatives/landscape_960/image.jpg",
-        "skills": "HTML, CSS, Javascript",
-        "email": "howhigh@gmail.com",
-        "github": "github22.github.com",
-        "linkedin": "222linkedin.com"
+    "id": "1",
+    "name": "JamesD11",
+    "bio": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.",
+    "image": "https://avatars1.githubusercontent.com/u/16884708?v=3&s=460",
+    "skills": [
+        "HTML",
+        "CSS",
+        "Javascript"
+    ],
+    "email": "howhigh@gmail.com",
+    "github": "github22.github.com",
+    "linkedin": "222linkedin.com"
 
-    }, {
+}, {
 
-        "id": "2",
-        "title": "Wojciech",
-        "bio": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.",
-        "image": "http://bc.ctvnews.ca/polopoly_fs/1.2205032.1422218539!/httpImage/image.jpg_gen/derivatives/landscape_960/image.jpg",
-        "skills": "HTML, CSS, Javascript",
-        "email": "howhigh@gmail.com",
-        "github": "github22.github.com",
-        "linkedin": "222linkedin.com"
-    }, {
-        "id": "3",
-        "title": "Wojciech",
-        "bio": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.",
-        "image": "http://bc.ctvnews.ca/polopoly_fs/1.2205032.1422218539!/httpImage/image.jpg_gen/derivatives/landscape_960/image.jpg",
-        "skills": "HTML, CSS, Javascript",
-        "email": "howhigh@gmail.com",
-        "github": "github22.github.com",
-        "linkedin": "222linkedin.com"
+    "id": "2",
+    "name": "spanosc1",
+    "bio": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.",
+    "image": "https://avatars3.githubusercontent.com/u/6527915?v=3&s=460",
+    "skills": [
+        "Jquery",
+        "Node",
+        "gimp"
+    ],
+    "email": "howhigh@gmail.com",
+    "github": "github22.github.com",
+    "linkedin": "222linkedin.com"
+}, {
+    "id": "3",
+    "name": "wpierscionek",
+    "bio": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.",
+    "image": "https://avatars3.githubusercontent.com/u/16659149?v=3&s=460",
+    "skills": [
+        "wordpress",
+        "github",
+        "mac"
+    ],
+    "email": "howhigh@gmail.com",
+    "github": "github22.github.com",
+    "linkedin": "222linkedin.com"
+}, {
+    "id": "4",
+    "name": "Zelaway",
+    "bio": "akdmaskdmkasmdkmasmdkasmdsakdmksamdkmet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.",
+    "image": "https://avatars0.githubusercontent.com/u/16628668?v=3&s=460",
+    "skills": [
+        "work",
+        "coding",
+        "layout"
+    ],
+    "email": "asdksad@gmail.com",
+    "github": "githasdasub22.github.com",
+    "linkedin": "222linkedin.com"
+}, {
+    "id": "5",
+    "name": "dbdesai",
+    "bio": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.",
+    "image": "https://avatars0.githubusercontent.com/u/13985227?v=3&s=460",
+    "skills": [
+        "wordpress",
+        "github",
+        "mac"
+    ],
+    "email": "howhigh@gmail.com",
+    "github": "github22.github.com",
+    "linkedin": "222linkedin.com"
+}, {
+    "id": "6",
+    "name": "dan-weierich",
+    "bio": "akdmaskdmkasmdkmasmdkasmdsakdmksamdkmet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.",
+    "image": "https://avatars3.githubusercontent.com/u/16906449?v=3&s=460",
+    "skills": [
+        "work",
+        "coding",
+        "layout"
+    ],
+    "email": "asdksad@gmail.com",
+    "github": "githasdasub22.github.com",
+    "linkedin": "222linkedin.com"
 }]
