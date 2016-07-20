@@ -26,8 +26,17 @@
             </div>
         </div>
     </div>
-        <h2>{{results.github.location}}</h2>
-        <h2>{{results.github.login}}</h2>
+    <div class="row">
+        <div class="col-md-6">
+            <h2>{{results.github.location}}</h2>
+            <h2>{{results.github.login}}</h2>
+        </div>
+        <div class="col-md-6" ng-repeat="item in repos">
+            <ul>
+                <li>{{item.name}}</li>
+            </ul>
+        </div>
+    </div>
 </div>
 <div class="modal-footer">
     <!-- <button class="btn btn-primary" ng-click="ok()">OK</button> -->

@@ -23,7 +23,7 @@
                         githubInfo: function() {
                             return $scope.githubInfo
                         },
-                        githubRepos: function() {
+                        repos: function() {
                             return $scope.repos
                         }
                     }
@@ -37,7 +37,7 @@
             };
         });
 
-    var ModalInstanceCtrl = function($scope, $uibModalInstance, userAccounts, accountIndex, githubInfo, githubRepos) {
+    var ModalInstanceCtrl = function($scope, $uibModalInstance, userAccounts, accountIndex, githubInfo, repos) {
 
         $scope.userAccounts = userAccounts;
         $scope.selected = {
@@ -46,12 +46,12 @@
 
         $scope.githubInfo = githubInfo;
         $scope.results = {
-            repos: $scope.githubInfo
+            github: $scope.githubInfo
         };
 
-        $scope.githubRepos = githubRepos;
-        $scope.results = {
-            repos: $scope.githubRepos
+        $scope.repos = repos;
+        $scope.returned = {
+            repositories: $scope.repos
         };
 
         // $scope.ok = function() {
