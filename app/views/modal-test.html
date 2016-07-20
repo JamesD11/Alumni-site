@@ -7,7 +7,7 @@
         </div>
         <div class="row">
             <div class="col-md-4 col-md-offset-1">
-                <h2>{{selected.account.title}}</h2>
+                <h2>{{selected.account.name}}</h2>
                 <h3 class="text-center">About</h3>
                 <p>{{selected.account.bio}}</p>
                 <hr>
@@ -24,12 +24,10 @@
                 <p class="text-center">LinkedIn {{selected.account.linkedin}}</p>
                 <p class="text-center">Github {{selected.account.github}}</p>
             </div>
-            <div class="container" ng-repeat="github in info">
-                <p>{{github.location}}</p>
-                <p>{{github.login}}</p>
-            </div>
         </div>
     </div>
+        <h2>{{results.github.location}}</h2>
+        <h2>{{results.github.login}}</h2>
 </div>
 <div class="modal-footer">
     <!-- <button class="btn btn-primary" ng-click="ok()">OK</button> -->

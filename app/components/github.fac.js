@@ -12,6 +12,7 @@
             }
 
             function getUserInfo(userName) {
+                // return $http.get('https://api.github.com/users?access_token=a7b78d9c1003934c55f72523573b824be7664703');
                 return $http.get('https://api.github.com/users/' + userName);
             };
 
@@ -22,7 +23,7 @@
             return {
                 getProfiles: getProfiles,
                 getUserInfo: getUserInfo,
-                getRepos: getRepos
+                // getRepos: getRepos
             }
         });
 })();
@@ -30,3 +31,5 @@
 
 // RCB end-point
 // return $http.get('https://api.github.com/orgs/RutgersCodingBootcamp/members')
+
+// a7b78d9c1003934c55f72523573b824be7664703 

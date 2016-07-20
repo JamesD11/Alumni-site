@@ -1,7 +1,7 @@
 [{
 
         "id": "1",
-        "title": "Jim",
+        "name": "Jim",
         "bio": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.",
         "image": "http://www.tvchoicemagazine.co.uk/sites/default/files/imagecache/interview_image/intex/michael_emerson.png",
         "skills": [
@@ -16,7 +16,7 @@
         {
 
             "id": "2",
-            "title": "Kasia",
+            "name": "Kasia",
             "bio": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.",
             "image": "http://img-cache.cdn.gaiaonline.com/ebc77fe5033cdda982a88d5113a19ae5/http://i718.photobucket.com/albums/ww183/godlyblackfox/face.jpg",
             "skills": [
@@ -29,7 +29,7 @@
         },
         {
             "id": "3",
-            "title": "wpierscionek",
+            "name": "wpierscionek",
             "bio": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.",
             "image": "http://www.andy88jones.com/img/face.jpg",
             "skills": [
@@ -42,7 +42,7 @@
         },
         {
             "id": "4",
-            "title": "Bob",
+            "name": "Bob",
             "bio": "akdmaskdmkasmdkmasmdkasmdsakdmksamdkmet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.",
             "image": "https://cdt.org/files/2012/09/MG_3327_ed-1024x1024.jpg",
             "skills": [

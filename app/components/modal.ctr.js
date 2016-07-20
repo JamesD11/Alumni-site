@@ -8,7 +8,7 @@
         .controller("modalCTRL", function($scope, $http, githubFactory, stackoverflowFactory, $uibModal, $log) {
             // this is pointing to functions so we don't use 'this' multiple times
 
-            $scope.open = function(account) {
+            $scope.open = function(account, info, repos) {
 
                 var modalInstance = $uibModal.open({
                     templateUrl: '../views/modal-test.html',
@@ -19,6 +19,12 @@
                         },
                         userAccounts: function() {
                             return $scope.userAccounts
+                        },
+                        githubInfo: function() {
+                            return $scope.githubInfo
+                        },
+                        githubRepos: function() {
+                            return $scope.repos
                         }
                     }
                 });
@@ -31,11 +37,21 @@
             };
         });
 
-    var ModalInstanceCtrl = function($scope, $uibModalInstance, userAccounts, accountIndex) {
+    var ModalInstanceCtrl = function($scope, $uibModalInstance, userAccounts, accountIndex, githubInfo, githubRepos) {
 
         $scope.userAccounts = userAccounts;
         $scope.selected = {
             account: $scope.userAccounts[accountIndex]
+        };
+
+        $scope.githubInfo = githubInfo;
+        $scope.results = {
+            repos: $scope.githubInfo
+        };
+
+        $scope.githubRepos = githubRepos;
+        $scope.results = {
+            repos: $scope.githubRepos
         };
 
         // $scope.ok = function() {
