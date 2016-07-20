@@ -13,6 +13,7 @@
                 var modalInstance = $uibModal.open({
                     templateUrl: '../views/modal-test.html',
                     controller: ModalInstanceCtrl,
+                    size: 'lg',
                     resolve: {
                         accountIndex: function() {
                             return $scope.userAccounts.indexOf(account)
