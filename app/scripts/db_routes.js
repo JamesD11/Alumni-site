@@ -10,8 +10,15 @@ passport.serializeUser(function(user, done) {
   done(null, user.id);
 });
 
-passport.deserializeUser(function(id, done) {
-    db.User.find({where: {id: id}}).then(function(user){
+passport.deserializeUser(function(profile, done) {
+    db.User.create({
+         id:profile.id,
+         first_name: profile.firstName,
+         last_name: profile.lastName,
+         email: uemail,
+         current_job: ucurrent_job ,
+         portfolio_link: uportfolio_link,
+      where: {id: id}}).then(function(user){
         if(!user){
             winston.warn('Logged in user not in database, user possibly deleted post-login');
             return done(null, false);
