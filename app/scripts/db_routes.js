@@ -1,4 +1,5 @@
 var express    = require('express');
+var passport   = require('passport');
 var request    = require('request');
 var nodemailer = require('nodemailer');
 var bodyParser = require('body-parser');
