@@ -25,7 +25,7 @@ passport.serializeUser(function(user, done) {
 passport.deserializeUser(function(user, done) {
   done(null, user);
 });
-
+var li= require('./app/scripts/db_routes.js');
 passport.use(new LinkedInStrategy({
 	clientID: "77ef545dcj0dr6",
 	clientSecret: "1d2nBUWl3dkX1DuQ",
@@ -36,8 +36,10 @@ passport.use(new LinkedInStrategy({
 	process.nextTick(function() {
 		//This profile object below contains all user information from linkedin
 		console.log(profile._json);
+    li.code(profile._json);
 		return done(null, profile);
-	});
+  });
+
 }));
 
 app.get('/auth/linkedin',
@@ -62,7 +64,7 @@ app.use("*", function(req, res) {
 	res.sendFile(process.cwd() + "/app/index.html");
 });
 
-var controller = require("./app/scripts/db_routes.js")(app,passport);
+require("./app/scripts/db_routes.js");
 
 app.listen(PORT, function(){
 	console.log('App listening on PORT ' + PORT);
