@@ -35,8 +35,9 @@ passport.use(new LinkedInStrategy({
 	process.nextTick(function() {
 		//This profile object below contains all user information from linkedin
 		// console.log(profile._json);
-		return done(null, profile);
-		console.log(profile.summary);
+
+    return done(null, profile);
+console.log(profile.summary);
 
 	});
 }));
