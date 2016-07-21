@@ -7,7 +7,7 @@ var path 		= require("path");
 var passport 	= require('passport');
 var LinkedInStrategy = require('passport-linkedin-oauth2').Strategy;
 var app = express();
-var PORT = process.env.PORT || 3200;
+var PORT = process.env.PORT || 3000;
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
@@ -34,10 +34,10 @@ passport.use(new LinkedInStrategy({
 	//asynchronous verification
 	process.nextTick(function() {
 		//This profile object below contains all user information from linkedin
-		// console.log(profile._json);
+		 console.log(profile._json);
 
     return done(null, profile);
-console.log(profile.summary);
+
 
 	});
 }));
