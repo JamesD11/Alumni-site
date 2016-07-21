@@ -8,6 +8,7 @@ var LinkedInStrategy = require('passport-linkedin-oauth2').Strategy;
 var app = express();
 var PORT = process.env.PORT || 3000;
 
+
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.text());
@@ -60,7 +61,7 @@ app.use("*", function(req, res) {
 	res.sendFile(process.cwd() + "/app/index.html");
 });
 
-
+var controller = require("./app/scripts/db_routes.js")(app,passport);
 
 app.listen(PORT, function(){
 	console.log('App listening on PORT ' + PORT);

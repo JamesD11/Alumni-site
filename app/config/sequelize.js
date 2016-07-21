@@ -4,7 +4,7 @@ var connection = new Sequelize('mysql://of71bayir379ac47:fc9jpfxk1turzwo8@nj5rh9
 var data = {
 
 profile: connection.define('profile', {
-  id: { type: Sequelize.INTEGER, primaryKey: true, autoIncrement: true},
+  id: { type: Sequelize.INTEGER, primaryKey: true, autoIncrement: false},
   first_name: Sequelize.STRING,
   last_name: Sequelize.STRING,
   email: Sequelize.STRING,
@@ -17,7 +17,7 @@ profile: connection.define('profile', {
 }, {timestamps: false}),
 
 partner: connection.define('partner', {
-  id: { type: Sequelize.INTEGER, primaryKey: true, autoIncrement: true},
+  id: { type: Sequelize.INTEGER, primaryKey: true, autoIncrement: false},
   company_name:Sequelize.STRING,
   contact_person:Sequelize.STRING,
   email:Sequelize.STRING,

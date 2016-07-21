@@ -1,4 +1,4 @@
-//var api= require('db_routes.js');
+// var api= require('db_routes.js');
 angular
     .module("alumni", ["ui.bootstrap", "ui.router"])
     .config(function($stateProvider, $urlRouterProvider) {
