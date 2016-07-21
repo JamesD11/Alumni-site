@@ -1,15 +1,16 @@
 var express= require('express');
 var passport= require('passport');
 var _ = require('lodash');
+var logger = require('morgan');
 var nodemailer= require ('nodemailer');
 var bodyParser= require('body-parser');
-// var LinkedInStrategy = require('passport-linkedin-oauth2').Strategy;
- var connection = require('../config/sequelize.js');
+var LinkedInStrategy = require('passport-linkedin-oauth2').Strategy;
+var connection = require('../config/sequelize.js');
 // var winston = require('../config/winston');
 
-module.exports = function(app) {
+module.exports = function(app,passport) {
 //all post for creating new user/partner/event
-
+  app.use(logger('combined'));
   //sample post for new sign in
   app.post('/newalumniroutehere',function(req,res) {
 

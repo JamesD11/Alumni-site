@@ -4,6 +4,7 @@ var express 	= require('express');
 var bodyParser 	= require('body-parser');
 var path 		= require("path");
 var passport 	= require('passport');
+var morgan = require('morgan');
 var LinkedInStrategy = require('passport-linkedin-oauth2').Strategy;
 var app = express();
 var PORT = process.env.PORT || 3000;
