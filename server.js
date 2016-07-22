@@ -38,7 +38,7 @@ passport.use(new LinkedInStrategy({
 		//This profile object below contains all user information from linkedin
     	user.currentUser = profile._json.emailAddress;
     	console.log(user.currentUser);
-    	//li.newAlum(profile._json);
+    	li.newAlum(profile._json);
 		return done(null, profile);
   });
 
