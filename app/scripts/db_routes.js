@@ -23,7 +23,7 @@ var connection = require('../config/sequelize.js');
 
 var linkedin= {
   newAlum: function(profile, callback){
-    console.log(profile);
+    console.log(profile);  
     connection.profile.create({
         first_name: profile.firstName,
         last_name: profile.lastName,
