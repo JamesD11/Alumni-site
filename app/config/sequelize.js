@@ -8,10 +8,10 @@ profile: connection.define('profile', {
   first_name: Sequelize.STRING,
   last_name: Sequelize.STRING,
   email: Sequelize.STRING,
-  current_job: Sequelize.STRING,
-  portfolio_link: Sequelize.STRING,
+  location: Sequelize.STRING,
+  pictureURL: Sequelize.STRING,
   skills:Sequelize.STRING,
-  front_end:Sequelize.BOOLEAN,
+  publicProfileUrl:Sequelize.STRING,
   back_end:Sequelize.BOOLEAN,
   full_stack:Sequelize.BOOLEAN
 }, {timestamps: false}),

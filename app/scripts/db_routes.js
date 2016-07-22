@@ -27,13 +27,12 @@ var linkedin= {
     connection.profile.create({
         first_name: profile.firstName,
         last_name: profile.lastName,
-         email: profile.emailAddress,
-        // current_job: ucurrent_job ,
-        // portfolio_link: uportfolio_link,
+        email: profile.emailAddress,
+        pictureURL: profile.pictureUrl,
         // skills: uskills,
         // front_end: ufront_end,
         // back_end:uback_end,
-        // full_stack:ufull_stack
+        publicProfileUrl:profile.publicProfileUrl,
       });
   }
 };
