@@ -27,7 +27,7 @@ var linkedin= {
     connection.profile.create({
         first_name: profile.firstName,
         last_name: profile.lastName,
-        // email: uemail,
+         email: profile.emailAddress,
         // current_job: ucurrent_job ,
         // portfolio_link: uportfolio_link,
         // skills: uskills,
