@@ -12,11 +12,13 @@
             }
 
             function getUserInfo(userName) {
-                return $http.get('https://api.github.com/users/' + userName);
+                return $http.get('https://api.github.com/users/' + userName + '?&access_token=a7b78d9c1003934c55f72523573b824be7664703');
+                // return $http.get('https://api.github.com/users/' + userName);
             };
 
             function getRepos(userName) {
-                return $http.get('https://api.github.com/users/' + userName + '/repos');
+                return $http.get('https://api.github.com/users/' + userName + '/repos?&access_token=a7b78d9c1003934c55f72523573b824be7664703');
+                // return $http.get('https://api.github.com/users/' + userName + '/repos');
             };
 
             return {

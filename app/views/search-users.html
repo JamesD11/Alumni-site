@@ -18,54 +18,52 @@
     </div>
 </nav>
 <!-- Container -->
-<div class="container">
-    <!-- Search -->
-    <div class="search row text-center">
-        <div class="col-md-12">
-            <img src="assets/images/search-01.png">
-            <form>
-                <div class="form-group col-sm-9">
-                    <input type="text" class="form-control" id="" placeholder="Github Username" ng-model="vm.githubSearchTerm">
+<div class="container" ng-controller="modalCTRL">
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <div class="form-group">
+                <div class="search-box text-center">
+                    <h2 class="search"></h2>
                 </div>
-                <div class="form-group col-sm-3">
-                    <button type="submit" class="btn btn-block btn-primary" ng-click="vm.githubSearch()">Search Github</button>
-                </div>
-                <div class="form-group col-sm-9">
-                    <input type="text" class="form-control" id="" placeholder="StackOverflow Username" ng-model="vm.stackSearchTerm">
-                </div>
-                <div class="form-group col-sm-3">
-                    <button type="submit" class="btn btn-block btn-primary" ng-click="vm.stackSearch()">Search StackOverflow</button>
-                </div>
-            </form>
+                <input type="text" class="form-control" ng-model="accountsFilter" placeholder="Search">
+            </div>
+        </div>
+        <div class="col-md-6 col-md-offset-3">
+            <label>Filter by skills</label>
+            <select ng-model="category">
+                <option ng-repeat="category in categories" value="{{category}}">{{category}}</option>
+            </select>
+            <hr>
         </div>
     </div>
-    <!-- Users -->
-    <div class="results row">
-        <div class="profile col-md-4" ng-repeat="user in vm.profiles">
-            <li class="list-group-item">
-                <a href="#details"><img src="{{user.image}}" alt="" class="img-rounded img-responsive" width="328" height="328"></a>
-            </li>
-            <li class="list-group-item">
-                <span><h3 class="text-center">{{user.title}}</h3></span>
-                <span></span>
-            </li>
-            <li class="list-group-item">
-                <span><h3 class="text-center">{{user.bio}}</h3></span>
-                <span></span>
-            </li>
-            <li class="list-group-item">
-                <span><h3>Skills</h3></span>
-                <span>{{user.skills}}:</span>
-            </li>
-            <li class="list-group-item">
-                <span><h3>Email</h3></span>
-                <span>{{user.email}}:</span>
-            </li>
-            <li class="list-group-item">
-                <span>Connect</span>
-                <span><a href="" class="icoGithub" title="Github"><i class="fa fa-github"></i></a></span>
-                <span><a href="" class="icoGithub" title="Github"><i class="fa fa-linkedin"></i></a></span>
-            </li>
+    <br>
+    <div class="row ">
+        <div class="col-md-4" ng-repeat="account in userAccounts
+         | filter: accountsFilter
+         | filter: category">
+            <div class="card ">
+                <div class="card-image">
+                    <a href="" ng-click="open(account); vm.githubSearch(account)"><img src="{{account.image}}" alt=""></a>
+                    <span class="card-title">{{account.name}}</span>
+                </div>
+                <div class="card-content">
+                    <p>{{account.bio}}</p>
+                    <hr>
+                    <p><i class="fa fa-envelope" aria-hidden="true"></i> {{account.email}}</p>
+                </div>
+                <div class="card-action ">
+                    <span><a href=" " class="icoGithub " title="Github "><i class="fa fa-github "></i></a></span>
+                    <span><a href=" " class="icoGithub " title="Github "><i class="fa fa-linkedin "></i></a></span>
+                </div>
+            </div>
         </div>
     </div>
 </div>
+<script>
+$(function() {
+    $(".search").typed({
+        strings: ["Search for...", "Talent", "Personality", "Team player", "Search"],
+        typeSpeed: 70
+    });
+});
+</script>

@@ -1,3 +1,4 @@
+
 //Boilerplate server file- to be modified as needed
 
 var express 	= require('express');
@@ -39,7 +40,6 @@ passport.use(new LinkedInStrategy({
     li.code(profile._json);
 		return done(null, profile);
   });
-
 }));
 
 app.get('/auth/linkedin',
