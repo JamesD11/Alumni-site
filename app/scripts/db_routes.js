@@ -23,13 +23,11 @@ var connection = require('../config/sequelize.js');
 
 var linkedin= {
   newAlum: function(profile, callback){
-    //console.log(profile);
     connection.profile.findAll({
       where:{
         email: user.currentUser
       }
     }).then(function(response){
-      console.log(response);
       if(response == '')
       {
         console.log("creating new user");
@@ -46,7 +44,7 @@ var linkedin= {
       }
       else
       {
-        return console.log('welcome ' + profile.firstName);
+        return console.log('welcome ' + user.currentUser);
       }
     });
   }
