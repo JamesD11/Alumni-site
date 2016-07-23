@@ -1,6 +1,6 @@
 var express= require('express');
 var passport= require('passport');
-
+var user= require("../data/currentUser.js");
 var _ = require('lodash');
 var logger = require('morgan');
 var nodemailer= require ('nodemailer');
@@ -23,17 +23,32 @@ var connection = require('../config/sequelize.js');
 
 var linkedin= {
   newAlum: function(profile, callback){
-    console.log(profile);
-    connection.profile.create({
-        first_name: profile.firstName,
-        last_name: profile.lastName,
-        email: profile.emailAddress,
-        pictureURL: profile.pictureUrl,
-        // skills: uskills,
-        // front_end: ufront_end,
-        // back_end:uback_end,
-        publicProfileUrl:profile.publicProfileUrl,
-      });
+    //console.log(profile);
+    connection.profile.findAll({
+      where:{
+        email: user.currentUser
+      }
+    }).then(function(response){
+      console.log(response);
+      if(response == '')
+      {
+        console.log("creating new user");
+        connection.profile.create({
+            first_name: profile.firstName,
+            last_name: profile.lastName,
+            email: profile.emailAddress,
+            pictureURL: profile.pictureUrl,
+            // skills: uskills,
+            // front_end: ufront_end,
+            // back_end:uback_end,
+            publicProfileUrl:profile.publicProfileUrl
+        });
+      }
+      else
+      {
+        return console.log('welcome ' + profile.firstName);
+      }
+    });
   }
 };
 module.exports= linkedin;
