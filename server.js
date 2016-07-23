@@ -67,6 +67,8 @@ app.use("*", function(req, res) {
 });
 
 require("./app/scripts/db_routes.js");
+require("./app/scripts/userRoute.js");
+
 
 app.listen(PORT, function(){
 	console.log('App listening on PORT ' + PORT);
