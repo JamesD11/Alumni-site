@@ -8,7 +8,8 @@
 
 
             function getProfiles() {
-                return $http.get('../data/data.json')
+                return $http.get('../data/data.json');
+                //return $http.get('/allUsers');
             }
 
             function getUserInfo(userName) {
