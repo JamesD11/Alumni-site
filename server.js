@@ -30,7 +30,7 @@ var li= require('./app/scripts/db_routes.js');
 passport.use(new LinkedInStrategy({
 	clientID: "77ef545dcj0dr6",
 	clientSecret: "1d2nBUWl3dkX1DuQ",
-	callbackURL: "http://127.0.0.1:3000/auth/linkedin/callback",
+	callbackURL: "https://lit-headland-96298.herokuapp.com/#/index/auth/linkedin/callback",
 	scope: ['r_emailaddress', 'r_basicprofile'],
 }, function(accessToken, refreshToken, profile, done) {
 	//asynchronous verification
