@@ -1,6 +1,6 @@
 var express= require('express');
 var passport= require('passport');
-
+var user= require("../data/currentUser.js");
 var _ = require('lodash');
 var logger = require('morgan');
 var nodemailer= require ('nodemailer');
@@ -24,6 +24,16 @@ var connection = require('../config/sequelize.js');
 var linkedin= {
   newAlum: function(profile, callback){
     console.log(profile);
+    if
+    (connection.profile.findAll({
+      where:{
+        email: user.currentUser
+      }
+    })=== true){
+
+      return console.log('welcome ' + profile.firstName);
+    }
+    else{
     connection.profile.create({
         first_name: profile.firstName,
         last_name: profile.lastName,
@@ -35,6 +45,7 @@ var linkedin= {
         publicProfileUrl:profile.publicProfileUrl,
       });
   }
+}
 };
 module.exports= linkedin;
 
