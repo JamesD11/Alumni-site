@@ -18,7 +18,7 @@ app.use(bodyParser.json({type:'application/vnd.api+json'}));
 
 app.use(passport.initialize());
 app.use(passport.session());
-
+//require("./app/scripts/db_routes_read.js")(app);
 passport.serializeUser(function(user, done) {
   done(null, user);
 });
